@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 10</title>
+    <style>
+        
+        #parent {
+            width: 100%;
+            border: 5px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #parent>div {
+            width: 30%;
+            height: 300px;
+            border: 5px solid rgb(34, 253, 34);
+           
+        }
+
+        
+        #parent>div>div {
+            border: 5px solid rgb(90, 178, 106);
+            background-color:rgb(161, 228, 173) ;
+            width: 90%;
+            height: 60px;
+            
+            margin-left: 15px;  
+            margin-top: 15px;   
+           
+        }
+
+        @media screen and (max-width: 450px) {
+            #parent {
+                border: 5px solid black;
+                flex-direction: column;
+                text-align: right;
+            }
+
+            #parent>div {
+                border: 5px solid rgb(77, 246, 21);
+                width: 80%;
+                margin: auto;
+                margin-bottom: 20px;
+                display: flex;
+            }
+
+              
+            #parent>div>div {
+                width: 25%;
+                height: 250px;
+                margin-top: 20px;
+                border: 5px solid palevioletred;
+                background-color: lavender;
+               
+        }
+
+    }
+    
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+    <div id="parent">
+        <div>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            
+            
+               </div>
+        <div>
+
+        <div>X</div>
+        <div>Y</div>
+        <div>Z</div>
+       </div>
+        <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+
+
+
+    </div>
+
+
+    
+</body>
+</html>
