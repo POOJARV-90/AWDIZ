@@ -17,28 +17,24 @@
         #screen{
             width: 100%;
             border: 1px solid black;
-            
-            
+                
         }
+        /* navbvar */
         #screen>:nth-child(1){
             width: 100%;
             height: 60px;
-            border: 1px solid black;
-            
+            border: 1px solid black;  
             display: flex;
             justify-content: space-between;
             background-color: #24292F;
-            
-
         }
        
         /* bars */
-        #screen> :nth-child(1)> div:nth-child(1){
+        #screen>:nth-child(1)>div:nth-child(1){
             width: 10%;
             /* border: 1px solid rgb(22, 115, 245);   */
             display: none;                 
-            
-            
+             
         }
         #screen> :nth-child(1)>div:nth-child(2){
             width: 65%;
@@ -57,21 +53,18 @@
              background-color: #24292F;
          }
          
-             
-             
-         
          #logo{
             width: 60%;
             height: 70%;
             background-color: #24292F;
             margin-top: 6px;
-            margin-left: 40px;
+            margin-left: 30px;
               
             
          }
 
-          #screen> :nth-child(1)>div:nth-child(2) >:nth-child(2) {
-            width: 37%;
+          #screen> :nth-child(1)>div:nth-child(2)>:nth-child(2) {
+            width: 38%;
             border: 1px solid grey;
             border-radius: 5px;
             height: 30px;
@@ -81,8 +74,8 @@
 
          }
          #input{
-            width: 280px; border: none; 
-            
+            width: 225px; 
+            border: none; 
             background-color: #24292F;
 
          }
@@ -94,8 +87,6 @@
             margin-top: 5px;
             margin-left: 5px;
             
-
-
          }
          ::placeholder{
             color: #dadada;
@@ -143,7 +134,7 @@
          
 
 
-        #screen> :nth-child(1)> div:nth-child(3){
+        #screen>:nth-child(1)> div:nth-child(3){
             width: 10%;
             /* border: 1px solid rgb(17, 233, 103);     */
             display: flex;
@@ -158,13 +149,93 @@
 
         }
 
-        @media screen and (max-width:400px) {
+        @media screen and (max-width:440px ){
 
             #screen{
                 width: 100%;
+                border: 1px solid black;
                 
             }
-           
+             /* navabar */
+            #screen>:nth-child(1){
+                width: 100%;
+               /* border : 1px solid rgb(247, 19, 19); */
+            }
+             /* body */
+            #screen>:nth-child(2){
+                width: 100%;
+                border : 1px solid rgb(8, 8, 8);
+                height: 600px;
+                
+            }
+
+            /* bars */
+            #screen>:nth-child(1)>div:nth-child(1){
+            width: 10%;
+            /* border: 1px solid rgb(22, 115, 245);   */
+            display: flex; 
+            margin-top: 28px;
+            margin-left: 18px; 
+            }
+
+
+
+            #screen> :nth-child(1)>div:nth-child(2)>:nth-child(1){
+
+                width:20%;
+                height: 60px;
+                /* border: 1px solid white; */
+                padding-right: 100px;
+            }
+
+            #logo{
+                width: 100%;
+
+            }
+
+
+            #screen>:nth-child(1)>div:nth-child(2)>:nth-child(2){
+                display: none;
+            }
+
+            #input{
+                display: none;
+            }
+            #button{
+                display: none;
+            }
+            ::placeholder{
+                display: none;
+            }
+
+            #screen>:nth-child(1)>div:nth-child(2)>:nth-child(3){
+                display: none;
+            }
+
+            #screen>:nth-child(1)>div:nth-child(2)>:nth-child(4){
+                display: none;
+            }
+
+            #screen>:nth-child(1)>div:nth-child(2)>:nth-child(5){
+                display: none;
+            }
+
+            #screen>:nth-child(1)>div:nth-child(2)>:nth-child(6){
+                display: none;
+            }
+
+            #screen>:nth-child(1)>div:nth-child(2)>:nth-child(7){
+                display: none;
+            }
+
+            #screen>:nth-child(1)>div:nth-child(3)>:nth-child(2){
+                display: none;
+            }
+             
+            #screen>:nth-child(1)>div:nth-child(3)>:nth-child(3){
+                display: none;
+            }
+
 
         }
 
@@ -180,7 +251,7 @@
         <div>
            
             
-                <div><i class="fa-solid fa-bars fa-2x"></i></div>
+                <div><i class="fa-solid fa-bars fa-xl" style="color: #dadada;"></i></div>
 
 
                 <div>
