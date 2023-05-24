@@ -331,46 +331,54 @@
             color: rgb(27, 26, 26);
         }
 
+        /* ========RATING============ */
+
         #rating{
             border: 1px solid yellow;
             height:100px;
+            display: flex;
            
+        }
+
+        #rating>div:nth-child(1){
+            width: 35%;
+            border: 1px solid red;
+        }
+
+       
+        #rating>div:nth-child(1)>div:nth-child(2){
+            width: 90%;
+            border: 1px solid red;
+            display: flex;
+        }
+
+        #rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(1){
+            width: 40%;
+            height: 50px;
+            font-size: 45px;
+            border: 1px solid red;
+        }
+
+        #rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
+            color: #79ae88;
+            width: 20%;
+            padding-top: 20px;
+            border: 1px solid red;
         }
 
         #rating>div:nth-child(2){
-          display: flex;
-          justify-content: space-between;
-          /* border: 1px solid green; */
+            width: 45%;
+            border: 1px solid red;
+            line-height: 10px;
+            color: #c8c8ce;
         }
-
-         #rating>div:nth-child(2)>div:nth-child(1){
-            width: 25%;
-           
-            display: flex;
-           
-            border: 1px solid green;
-            border-right: 1px solid #80828d;
-            
+        ::-webkit-progress-bar{
+        
         }
+        
 
-         #rating>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
-            font-size: 48px;
-            border: 1px solid green;
-            
-         }
-          #rating>div:nth-child(2)>div:nth-child(1)>div:nth-child(2){
-            color: #14958f;
-            padding-top: 25px;
-            border: 1px solid green;
-          }
 
-         #rating>div:nth-child(2)>div:nth-child(2){
 
-             width: 70%;
-            height: 75px;
-            border: 1px solid green;
-            
-        }
        
 
 
@@ -585,20 +593,37 @@
                 </div>
 
                 <div id="rating">
-                    <h5>RATING <i class="fa-regular fa-star"></i></h5>
-                    <div>
-                        <div>
-                           <div>4.3</div>
-                           <div><i class="fa-solid fa-star "></i></div>
-                          
+                
+                
+
+                       <div>
+                            <div><h5>RATING <i class="fa-regular fa-star"></i></h5></div>
+                            <div >
+                                <div>4.3</div>
+                                <div><i class="fa-solid fa-star"></i></div>
+                            </div>
+                            <div><small> Verified Buyers</small>
+                            </div>
+
                         </div>
-                        <p>264 Verified Buyers</p>
+                        
                        
-                      <div>2</div>
+                      <div>
+                        <DIv>
+                            <p>1 &#9733 <progress value="10" max="100" ></progress></p>
+                            <p>2 &#9733 <progress value="20" max="100"></progress></p>
+                            <p>3 &#9733 <progress value="60" max="100"></progress></p>
+                            <p>3 &#9733 <progress value="70" max="100"></progress></p>
+                            <p>4 &#9733 <progress value="75" max="100"></progress></p>
+                        </DIv>
 
 
 
-                    </div>
+                      </div>
+
+
+
+                    
                     
 
                 </div>
