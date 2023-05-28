@@ -54,13 +54,19 @@
 // user age is greater than 18 and lesser than 80 then dl 
 // user age is lesser 18 or greter 80 not allowed dl  
 
-var userage = 18;
+// var userage = 15;
 
-if (userage==18){
-    console.log( "the user is applicable for licence")
-}else if(userage>18 && userage <80) {
-    ( "the user is applicable for licence")
-}
+// if (userage==18){
+89//     console.log( "the user is applicable for licence")
+// }else if(userage>18 && userage <80) {
+//     console.log ( "the user is applicable for licence")
+// } else {
+//     console.log(" not applicable")}
+
+
+
+
+
 
 
 
