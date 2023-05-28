@@ -58,7 +58,10 @@ var userage = 18;
 
 if (userage==18){
     console.log( "the user is applicable for licence")
-}else if(userage>18 && userage) {}
+}else if(userage>18 && userage <80) {
+    ( "the user is applicable for licence")
+}
+
 
 
 
