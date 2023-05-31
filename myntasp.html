@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -7,92 +8,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>single product</title>
     <style>
-
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            font-family:  Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
         }
-        #Main{
+
+        #screen{
             width: 100%;
+            /* height: 700px; */
+            background-color: #ffffff;
+            border: 1px solid white;
+            
+
+        }
+
+        #navbar{
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
+            position: fixed;
+            box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+            
+        }
+        #logo{
+            width: 5%;
+            height: 70px;
+            /* border: 1px solid red; */
+            padding-top: 10px;
+            margin-left: 50px;
+           
+        }
+        #sections{
+            width: 35%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+            font-size: small;
+            padding-top: 23px;
+            color: #282c3f;
+            margin-right: 15px;
+        }
+        #search{
+            width: 30%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            /* justify-content: space-around; */
+        }
+         #search>div{
+             /* border: 1px solid red; */
+           background-color: #f5f5f6;
+
+         }
+        
+        #search>div:nth-child(1){
+            /* border: 1px solid red; */
+            height: 40px;
+            width: 10%;
+            margin-top: 15px;
+            padding-top: 10px;
+            padding-left: 8px;
+            color: #717288;
+            /* background-color: #e4e4e4; */
+
+        }
+        #search>div:nth-child(2){
+            /* border: 1px solid red; */
+            height: 40px;
+            width: 85%;
+            margin-top: 15px;
+            /* background-color: #e4e4e4; */
+
+        }
+        #search>div:nth-child(2)>input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #f5f5f6;
+        }
+
+       
+
+
+        #icons{
+            width: 15%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #icons>div{
+            margin-top: 20px;
+
+        }
+         #icons>div>i:nth-child(1){
+            /* border: 1px solid red; */
+             color: #282c3f;
+
+         }
+        #icons>div>p{
+              color: #282c3f;
+            font-size: small;
+            margin-left: -4px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+
+        #Main {
+            width: 100%;
+            margin-top: 100px;
+            
             /* border: 1px solid red; */
             /* height: 600px; */
         }
 
-        #Main> div:nth-child(1) >p {
+        #Main>div:nth-child(1)>p {
             margin-top: 20px;
             margin-left: 25px;
             font-size: small;
             color: #80828d;
         }
-        #Main> div:nth-child(1) >p>b{
+
+        #Main>div:nth-child(1)>p>b {
             color: black;
             font-size: small;
         }
 
-       /* ========================== productpics==================================== */
-       /* #Main> :nth-child(2)> :nth-child(1) */
+        /* ========================== productpics==================================== */
+        /* #Main> :nth-child(2)> :nth-child(1) */
 
-       #Main> div:nth-child(2){
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 30px;
-       }
-           /* ========================left================== */
+        #Main>div:nth-child(2) {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
 
-       #Main> div:nth-child(2)> div:nth-child(1){
-        /* border: 1px solid red; */
-        width: 55%;
-        height: 300px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
+        /* ========================left================== */
 
-       }
+        #Main>div:nth-child(2)>div:nth-child(1) {
+            /* border: 1px solid red; */
+            width: 55%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
 
-       #Main> div:nth-child(2)> div:nth-child(1)>div{
 
-        width: 48%;
-        
-        border: 1px solid #f5f5f6;
-        margin-bottom: 15px;
-       }
+        }
 
-       #Main> div:nth-child(2)> div:nth-child(1)>div>img{
-        width: 100%;
-        height: 100%;
-       }
+        #Main>div:nth-child(2)>div:nth-child(1)>div {
 
-       #Main> div:nth-child(2)> div:nth-child(1)>div>img:hover{
-        padding: 2px;
-        /* margin: 0px;
+            width: 48%;
+
+            border: 1px solid #f5f5f6;
+            margin-bottom: 15px;
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(1)>div>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(1)>div>img:hover {
+            padding: 2px;
+            /* margin: 0px;
         transform: scale(1.1); */
-          
-       }
+
+        }
 
 
         /* ========================right================== */
 
 
-       #Main> div:nth-child(2)> div:nth-child(2){
-        /* border: 1px solid green; */
-        width: 42%;
-        
-        font-size: larger;
-       
-       }
-        #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(1){
-             
-             border-bottom: 1px solid #d4d5d9;
-             color: #282c3f;
-             margin-top: 7px;
+        #Main>div:nth-child(2)>div:nth-child(2) {
+            /* border: 1px solid green; */
+            width: 42%;
+
+            font-size: larger;
 
         }
 
-        #ratingbox{
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+
+            border-bottom: 1px solid #d4d5d9;
+            color: #282c3f;
+            margin-top: 7px;
+
+        }
+
+        #ratingbox {
             border: 1px solid #cacbd2;
             width: 35%;
             height: 25px;
@@ -100,31 +214,34 @@
             justify-content: space-around;
             margin-bottom: 15px;
             margin-top: 15px;
-          
+
         }
 
-        #ratingbox>div{
+        #ratingbox>div {
             width: 45%;
             height: 18px;
             /* border:  1px solid red; */
             margin-top: 2px;
             font-size: small;
         }
-         #ratingbox>div:nth-child(1){
+
+        #ratingbox>div:nth-child(1) {
             border-right: 2px solid #c8c8ce;
-         }
+        }
 
 
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(2){
-             border-bottom: 1px solid #d4d5d9;
-             color: #282c3f;
-             margin-top: 10px;
-             /* display: flex; */
-         }
-         #color{
-           color: #ff905a;
-         }
-         #button{
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+            border-bottom: 1px solid #d4d5d9;
+            color: #282c3f;
+            margin-top: 10px;
+            /* display: flex; */
+        }
+
+        #color {
+            color: #ff905a;
+        }
+
+        #button {
             margin-left: 35px;
             margin-top: 30px;
             border: none;
@@ -132,81 +249,83 @@
             color: #ff3e6c;
             background-color: white;
 
-         }
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(2)>div{
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div {
             /* border: 1px solid black; */
             display: flex;
-            
-         }
-       
-        #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div{
-        
-          border: 1px solid #c8c8ce;
-          width: 9%;
-          height: 46px;
-          margin-right: 10px;
-          margin-top: 20px;
-          border-radius: 50%;
-          text-align: center;
-          font-size: small;
-          font-weight: bold;
-          color: #282c3f;
-          padding-top: 12px;
+
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div {
+
+            border: 1px solid #c8c8ce;
+            width: 9%;
+            height: 46px;
+            margin-right: 10px;
+            margin-top: 20px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: small;
+            font-weight: bold;
+            color: #282c3f;
+            padding-top: 12px;
 
 
         }
 
-        #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div:hover{
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div:hover {
             border: 1px solid #ff3e6c;
         }
 
-          #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(2)>div:nth-child(4){
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(4) {
             width: 100%;
             /* height: 50px; */
             margin-top: 30px;
-           
-         }
-        
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>div:nth-child(1){
-           /* border: 1px solid red; */
-           width:40% ;
-           height: 55px;
-           border-radius: 6px;
-           text-align: center;
-           font-size: medium;
-           padding-top: 15px;
-           background-color: #ff3e6c;
-           color: #ffff;
-           
-         }
 
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>div:nth-child(2){
-           border: 1px solid #d4d5d9;
-           width:30% ;
-           margin-left: 15px;
-           height: 55px;
-           border-radius: 5px;
-           text-align: center;
-           font-size: medium;
-           font-weight: 650;
-           padding-top: 15px;
-           margin-bottom: 25PX;
-         }
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>div:nth-child(2):hover{
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>div:nth-child(1) {
+            /* border: 1px solid red; */
+            width: 40%;
+            height: 55px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: medium;
+            padding-top: 15px;
+            background-color: #ff3e6c;
+            color: #ffff;
+
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>div:nth-child(2) {
+            border: 1px solid #d4d5d9;
+            width: 30%;
+            margin-left: 15px;
+            height: 55px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: medium;
+            font-weight: 650;
+            padding-top: 15px;
+            margin-bottom: 25PX;
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(4)>div:nth-child(2):hover {
             border: 1px solid black;
-         }
+        }
 
-         
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(3){
-             border-bottom: 1px solid #d4d5d9;
-             margin-top: 30px;
-             margin-bottom: 25PX;
-            
-             color: #282c3f;
 
-         }
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(3) {
+            border-bottom: 1px solid #d4d5d9;
+            margin-top: 30px;
+            margin-bottom: 25PX;
 
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(3)>div:nth-child(2){
+            color: #282c3f;
+
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div:nth-child(2) {
             border: 1px solid #80828d;
             margin-top: 25px;
             width: 45%;
@@ -214,175 +333,374 @@
             display: flex;
             border-radius: 5px;
             justify-content: space-around;
-         }
+        }
 
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>button,input{
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>button,
+        input {
             border: none;
             background-color: #ffff;
-           
-         }
 
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>button{
+        }
+
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>button {
             font-weight: bold;
             font-size: normal;
             color: #ff3e6c;
-         }
+        }
 
-        
-         .fontsizesmall{
+
+        .fontsizesmall {
             font-size: small;
             margin-top: 5px;
-         }
+        }
 
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(3)>div:nth-child(4){
-             /* border: 1px solid red; */
-             margin-top: 30px;
-             font-size: 15px;
-             line-height: 30px;
-         }
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div:nth-child(4) {
+            /* border: 1px solid red; */
+            margin-top: 30px;
+            font-size: 15px;
+            line-height: 30px;
+        }
 
-        
-         #offer{
+
+        #offer {
             margin-top: 25px;
             margin-bottom: 30px;
 
-         }
-         #offer>div{
+        }
+
+        #offer>div {
             margin-top: 15px;
             line-height: 25px;
 
-         }
-         #offer> div> li:nth-child(2){
+        }
+
+        #offer>div>li:nth-child(2) {
             font-size: 13px;
             margin-left: 10px;
 
-         }
-        #offer> div> h5:nth-child(3){
+        }
+
+        #offer>div>h5:nth-child(3) {
             color: #ff3e6c;
             font-size: small;
         }
 
-         #Main> div:nth-child(2)> div:nth-child(2)>div:nth-child(4){
-             border-bottom: 1px solid #d4d5d9;
-             margin-top: 30px;
-             color: #282c3f;
-              
-
-         }
-         #details{
-            border-bottom: 1px solid #80828d;
-            
-
-         }
+        #Main>div:nth-child(2)>div:nth-child(2)>div:nth-child(4) {
+            border-bottom: 1px solid #d4d5d9;
+            margin-top: 30px;
+            color: #282c3f;
 
 
-
-        #details>h5{
-             font-size:small ;
-             margin-bottom: 10px;
-              margin-top: 15px;
-            
-           
         }
-        
 
-        #details>div{
+        #details {
+            border-bottom: 1px solid #80828d;
+
+
+        }
+
+
+
+        #details>h5 {
+            font-size: small;
+            margin-bottom: 10px;
+            margin-top: 15px;
+
+
+        }
+
+
+        #details>div {
             display: flex;
             justify-content: space-between;
             /* border: 1px solid red; */
             width: 90%;
-            
-        
+
+
         }
 
-      
-        #details>div:nth-child(8)>div{
+
+        #details>div:nth-child(8)>div {
             width: 45%;
             margin-bottom: 30px;
-            
+
 
         }
 
-        #details>div:nth-child(8)>div:nth-child(1)>div{
+        #details>div:nth-child(8)>div:nth-child(1)>div {
             height: 50px;
             /* margin-top: 10px; */
-            border-bottom:1px solid #cacbd2;   
-          
+            border-bottom: 1px solid #cacbd2;
+
         }
-        #details>div:nth-child(8)>div:nth-child(1)>div>p:nth-child(1){
+
+        #details>div:nth-child(8)>div:nth-child(1)>div>p:nth-child(1) {
             margin-top: 5px;
             font-size: 12px;
             color: #80828d;
         }
-        #details>div:nth-child(8)>div:nth-child(1)>div>p:nth-child(2){
+
+        #details>div:nth-child(8)>div:nth-child(1)>div>p:nth-child(2) {
             font-size: medium;
             color: rgb(27, 26, 26);
         }
 
 
-         #details>div:nth-child(8)>div:nth-child(2)>div{
-            border-bottom:1px solid #cacbd2;
-           /* margin-top: 5px; */
-           height: 50px;
+        #details>div:nth-child(8)>div:nth-child(2)>div {
+            border-bottom: 1px solid #cacbd2;
+            /* margin-top: 5px; */
+            height: 50px;
         }
 
-        #details>div:nth-child(8)>div:nth-child(2)>div>p:nth-child(1){
+        #details>div:nth-child(8)>div:nth-child(2)>div>p:nth-child(1) {
             margin-top: 5px;
             font-size: 12px;
             color: #80828d;
         }
 
-        #details>div:nth-child(8)>div:nth-child(2)>div>p:nth-child(2){
+        #details>div:nth-child(8)>div:nth-child(2)>div>p:nth-child(2) {
             font-size: medium;
             color: rgb(27, 26, 26);
         }
 
         /* ========RATING============ */
+        #userrating {
+            /* border: 1px solid black; */
+            border-bottom: 1px solid #cacbd2;
+            margin-top: 30px;
 
-        #rating{
+        }
+
+        #rating {
             /* border: 1px solid yellow; */
-            height:100px;
+            height: 100px;
             display: flex;
-            margin-top: 20px;
-           
+            /* margin-top: 20px; */
+
         }
 
-        #rating>div:nth-child(1){
+        #rating>div:nth-child(1) {
             width: 35%;
-            /* border: 1px solid red; */
+            /* border: 3px solid yellowgreen; */
+            font-size: medium;
         }
 
-       
-        #rating>div:nth-child(1)>div:nth-child(2){
+
+        #rating>div:nth-child(1)>div:nth-child(2) {
             width: 90%;
-           
+            /* border:3px solid green; */
+
             display: flex;
         }
 
-        #rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(1){
+        #rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
             width: 40%;
             height: 50px;
             font-size: 45px;
             /* border: 1px solid red; */
         }
 
-        #rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
+        #rating>div:nth-child(1)>div:nth-child(2)>div:nth-child(2) {
             color: #79ae88;
             width: 20%;
             padding-top: 20px;
             /* border: 1px solid red; */
         }
 
-        #rating>div:nth-child(2){
-            width: 45%;
+        #rating>div:nth-child(2) {
+            width: 50%;
             /* border: 1px solid red; */
-            line-height: 10px;
             color: #c2c2d1;
-          
-            
-        }
-       
+            height: 100px;
 
+
+        }
+
+        #rating>div:nth-child(2)>p {
+            line-height: 2px;
+        }
+
+        /* #rating>div:nth-child(2)>p>progress{
+            border: #80828d;
+            height: 5px;
+        } */
+
+        #RATING {
+            /* border: 1px solid red; */
+            width: 100%;
+            /* height: 100px; */
+            font-size: medium;
+            margin-top: 30px;
+            /* margin-bottom: 30px; */
+            padding-bottom: 20px;
+
+        }
+
+        #RATING>span {
+            font-size: small;
+            color: #80828d;
+        }
+
+        #RATING>p {
+
+            color: #424656;
+            font-size: small;
+            font-weight: bold;
+        }
+
+        #RATING>p>progress {
+
+            /* color: #424656;
+           font-size: small;
+           font-weight: bold; */
+            border: 1px solid grey;
+            height: 6px;
+            width: 35%;
+        }
+
+        #review {
+            /* border: 1px solid black; */
+            /* height: 200px; */
+            margin-top: 20px;
+            border-bottom: 1px solid #cacbd2;
+
+        }
+
+
+        #review>div:nth-child(2) {
+            /* border: 1px solid black; */
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        #review>div:nth-child(2)>div {
+            /* border: 1px solid black; */
+            width: 23%;
+            margin-top: 15px;
+
+        }
+
+        #review>div:nth-child(2)>div>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #review>div:nth-child(4)>p {
+            font-size: small;
+
+        }
+
+
+        #review>div:nth-child(4)>div:nth-child(2) {
+            width: 15%;
+            height: 15%;
+            /* border: 1px solid red; */
+
+
+        }
+
+        #review>div:nth-child(4)>div:nth-child(2)>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #review>div:nth-child(4)>div:nth-child(3) {
+            width: 100%;
+            height: 15%;
+            /* border: 1px solid red; */
+            font-size: small;
+            margin-top: 15px;
+        }
+
+        #review>div:nth-child(4)>div:nth-child(3)>span:nth-child(1) {
+            border-right: 1px solid gray;
+            margin-right: 10px;
+        }
+
+        #review>h6 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* #similarproduct{
+        width: 100%;
+        height: 500px;
+        border: 1px solid red;
+       } */
+
+        /* SIMILARPRODUCT 3*/
+
+        #Main>div:nth-child(3) {
+            width: 100%;
+            /* height: 500px; */
+            /* border: 1px solid red; */
+            /* display: flex; */
+
+        }
+
+        #Main>div:nth-child(3)>H4:nth-child(1) {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+
+
+        #Main>div:nth-child(3)>div:nth-child(2) {
+            /* border: 1px solid red; */
+            /* height: 300px; */
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        #Main>div:nth-child(3)>div:nth-child(2)>div {
+            border: 1px solid #e9e9eb;
+            height: 350px;
+            width: 17%;
+            margin-bottom: 40px;
+            line-height: 22PX;
+
+        }
+
+        #Main>div:nth-child(3)>div:nth-child(2)>div>img {
+            width: 100%;
+            height: 75%;
+        }
+
+        #Main>div:nth-child(3)>div:nth-child(2)>div>p:nth-child(2) {
+            font-weight: bold;
+            font-size: smaller;
+            margin-left: 12px;
+            margin-top: 8PX;
+        }
+
+        #Main>div:nth-child(3)>div:nth-child(2)>div>p:nth-child(3) {
+            color: #80828d;
+            font-size: small;
+            margin-left: 12px;
+        }
+
+        #Main>div:nth-child(3)>div:nth-child(2)>div>span:nth-child(4) {
+            font-weight: bold;
+            font-size: smaller;
+            margin-left: 12px;
+        }
+
+        #Main>div:nth-child(3)>div:nth-child(2)>div>span:nth-child(5) {
+            color: #80828d;
+            font-size: x-small;
+        }
+
+        #Main>div:nth-child(3)>div:nth-child(2)>div>span:nth-child(6) {
+            font-weight: bold;
+            font-size: small;
+            color: #ff905a;
+        }
     </style>
 
 
@@ -391,127 +709,186 @@
 
 
 </head>
+
 <body>
+
+    <div id="screen">
+    
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://gumlet.assettype.com/afaqs%2F2021-01%2F51966c7c-de5b-4092-ac03-e1f5e6152b32%2Fmyntra.png?auto=format%2Ccompress&w=640&dpr=1.0" 
+            height="85%" width="80%">
+        </div>
+        <div id="sections">
+            <div>MEN</div>
+            <div>WOMEN</div>
+            <div>KIDS</div>
+            <div>HOME & LIVING</div>
+            <div>BEAUTY</div>
+            <div>STUDIO</div>
+            
+
+
+        </div>
+        <div id="search">
+            <div><i class="fa-solid fa-magnifying-glass"></i> </div>
+            <div>  
+                <input type="text" placeholder="search for products,brands and more">
+            </div>
+
+
+
+        </div>
+        <div id="icons">
+            <div><i class="fa-regular fa-user"></i>
+            <p>Profile</p>
+        </div>
+        <div><i class="fa-regular fa-heart"></i>
+                <p>Wishlist</p></div>
+        <div><i class="fa-solid fa-bag-shopping"></i>
+                <p>Bag</p></div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
     <div id="Main">
         <div>
-            <p> Home  / Clothing / Men Clothing / Shirts / <B> WROGN Shirts > More By WROGN</B></p>
+            <p> Home / Clothing / Men Clothing / Shirts / <B> WROGN Shirts > More By WROGN</B></p>
 
 
 
         </div>
         <div id="product">
-            <div > 
+            <div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/726e7907-f0cc-421f-b42f-805bab4750901592566294603WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt1.jpg">
+                    <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/726e7907-f0cc-421f-b42f-805bab4750901592566294603WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt1.jpg">
                 </div>
-                <div> <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/3c58e670-7529-493d-baea-7e30dc14b3581592566294654WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt2.jpg"></div>
+                <div> <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/3c58e670-7529-493d-baea-7e30dc14b3581592566294654WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt2.jpg">
+                </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/f3c10294-a52b-4b55-aed8-9c1fe42d3fb81592566294714WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt3.jpg" >
+                    <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/f3c10294-a52b-4b55-aed8-9c1fe42d3fb81592566294714WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt3.jpg">
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/0137613a-cfbc-43ef-a1d3-f656a80782321592566294766WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt4.jpg" >
+                    <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/0137613a-cfbc-43ef-a1d3-f656a80782321592566294766WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt4.jpg">
                 </div>
-                <div> <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/596e2382-cc2b-48ab-b67d-2a4f3ce69c021592566294821WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt5.jpg" >
+                <div> <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/596e2382-cc2b-48ab-b67d-2a4f3ce69c021592566294821WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt5.jpg">
                 </div>
-                <div> 
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/3b9f1879-9366-447c-8b23-2066d50c12181592566294871WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt6.jpg" >
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11361338/2020/6/19/3b9f1879-9366-447c-8b23-2066d50c12181592566294871WROGNMenNavyBlueBurgundySlimFitCheckedCasualShirt6.jpg">
                 </div>
 
 
             </div>
 
 
-          <div id="info">
-
-            <div>
-                <h3>WROGN</h3>
-                <p style="color: #80828d;">Men Navy Blue & Burgundy Slim Fit Checked Casual Shirt</p>
-                <div id="ratingbox">
-                    <div><b>4.3</b><i class="fa-solid fa-star" style="color: #79ae88;"></i></div>
-                    <div>861 rating</div>
-                </div>
-
-            </div>
-
-            <div>
-                
-               <p>
-                <span> <strong>₹1429</strong> </span> <span>MPR <s>₹2599</s> </span> <span id="color"><strong>(45% OFF)</strong></span> <br>
-                <strong style="color: #79ae88;font-size:small;">inclusive of all taxes</strong>
-               </p>
-               
-               <h5>SELECT SIZE<button id="button">SIZE CHART ></button> </h5> 
-                 
-               <div>
-
-                    <div>39</div>
-                    <div>40</div>
-                    <div>42</div>
-                    <div>44</div>
-                    <div>46</div>
-
-                </div>
-
+            <div id="info">
 
                 <div>
-                    <div>
-                        <i class="fa-solid fa-bag-shopping"> </i>
-                       <b>ADD TO BAG</b> 
-                       
+                    <h3>WROGN</h3>
+                    <p style="color: #80828d;">Men Navy Blue & Burgundy Slim Fit Checked Casual Shirt</p>
+                    <div id="ratingbox">
+                        <div><b>4.3</b><i class="fa-solid fa-star" style="color: #79ae88;"></i></div>
+                        <div>861 rating</div>
                     </div>
+
+                </div>
+
+                <div>
+
+                    <p>
+                        <span> <strong>₹1429</strong> </span> <span>MPR <s>₹2599</s> </span> <span
+                            id="color"><strong>(45% OFF)</strong></span> <br>
+                        <strong style="color: #79ae88;font-size:small;">inclusive of all taxes</strong>
+                    </p>
+
+                    <h5>SELECT SIZE<button id="button">SIZE CHART ></button> </h5>
+
                     <div>
-                        <i class="fa-regular fa-heart"></i>
-                        WISHLIST
+
+                        <div>39</div>
+                        <div>40</div>
+                        <div>42</div>
+                        <div>44</div>
+                        <div>46</div>
+
                     </div>
+
+
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-bag-shopping"> </i>
+                            <b>ADD TO BAG</b>
+
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-heart"></i>
+                            WISHLIST
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
 
-
-
-            <div>
-                <h5>DELIVERY OPTIONS  <i class="fa-solid fa-truck-arrow-right"></i></h5                     >
 
                 <div>
-                    <input type="text" placeholder="Enter pincode"><button>Check</button>
-                    
-                </div>
-         
-            <p class="fontsizesmall">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+                    <h5>DELIVERY OPTIONS <i class="fa-solid fa-truck-arrow-right"></i></h5>
 
-                
-                    
-                <div>
+                    <div>
+                        <input type="text" placeholder="Enter pincode"><button>Check</button>
 
-                    <span>100% Original Products</span> <br>
-                    <span>Pay on delivery might be available</span> <br>
-                    <span>Easy 14 days returns and exchanges</span><br>
-                    <span>Try & Buy might be available</span>
+                    </div>
+
+                    <p class="fontsizesmall">Please enter PIN code to check delivery time & Pay on Delivery Availability
+                    </p>
+
+
+
+                    <div>
+
+                        <span>100% Original Products</span> <br>
+                        <span>Pay on delivery might be available</span> <br>
+                        <span>Easy 14 days returns and exchanges</span><br>
+                        <span>Try & Buy might be available</span>
                     </div>
 
                     <div id="offer">
-                        <div> <h5>BEST OFFERS <i class="fa-solid fa-tag"></i></h5>
-                            <p class="fontsizesmall">This product is already at its best price</p></div>
-                       
-                       <div>
-                        <h5>12% Instant Discount on OneCard Credit Cards</h5>
-                        <li>Min Spend Rs 3,500, Max Discount Rs 1,000.</li>
-                        <h5>Terms & Condition</h5>
+                        <div>
+                            <h5>BEST OFFERS <i class="fa-solid fa-tag"></i></h5>
+                            <p class="fontsizesmall">This product is already at its best price</p>
+                        </div>
+
+                        <div>
+                            <h5>12% Instant Discount on OneCard Credit Cards</h5>
+                            <li>Min Spend Rs 3,500, Max Discount Rs 1,000.</li>
+                            <h5>Terms & Condition</h5>
 
 
-                       </div>
-                       <div>
-                        <h5>10% Instant Discount on IDFC FIRST Credit and Debit Cards</h5>
-                        <li>Min Spend Rs 2,500, Max Discount Rs 1,000.</li>
-                        <h5>Terms & Condition</h5>
+                        </div>
+                        <div>
+                            <h5>10% Instant Discount on IDFC FIRST Credit and Debit Cards</h5>
+                            <li>Min Spend Rs 2,500, Max Discount Rs 1,000.</li>
+                            <h5>Terms & Condition</h5>
 
-                         
 
-                       </div>
-                       <div>
-                        <h5>Up To Rs 500 Cashback on CRED pay transactions.</h5>
-                        <li>Min Spend Rs 1,000. Available only on Android Devices</li>
-                        <h5>Terms & Condition</h5>
+
+                        </div>
+                        <div>
+                            <h5>Up To Rs 500 Cashback on CRED pay transactions.</h5>
+                            <li>Min Spend Rs 1,000. Available only on Android Devices</li>
+                            <h5>Terms & Condition</h5>
 
                         </div>
 
@@ -519,80 +896,97 @@
                             <h5>EMI option available.</h5>
                             <li>EMI starting from Rs.67/month</li>
                             <h5>View Plan</h5>
-    
-                            </div>
+
+                        </div>
 
                     </div>
-                
+
                 </div>
-                
+
                 <div id="details">
-                    <h5>PRODUCT DETAILS  <i class="fa-regular fa-rectangle-list"></i></h5>
-                    <small><p>Navy Blue and Burgundy checked casual shirt, has a spread <br>collar, long sleeves, button placket, curved hem, and 1 patch <br> pocket</p></small>
-                     
+                    <h5>PRODUCT DETAILS <i class="fa-regular fa-rectangle-list"></i></h5>
+                    <small>
+                        <p>Navy Blue and Burgundy checked casual shirt, has a spread <br>collar, long sleeves, button
+                            placket, curved hem, and 1 patch <br> pocket</p>
+                    </small>
+
                     <h5>Size & Fit</h5>
-                    <small><p>Slim fit <br>
-                        The model (height 6') is wearing a size 40</p></small>
+                    <small>
+                        <p>Slim fit <br>
+                            The model (height 6') is wearing a size 40</p>
+                    </small>
 
                     <h5>Material & Care</h5>
-                    <small><p>Material: 100% Cotton<br>
-                        Machine Wash</p></small>
+                    <small>
+                        <p>Material: 100% Cotton<br>
+                            Machine Wash</p>
+                    </small>
 
-                        <h5>Specifications</h5>
+                    <h5>Specifications</h5>
+
+
+
+                    <div>
+                        <div>
+                            <div>
+                                <p>Sleeve Length</p>
+                                <p>Long Sleeves</p>
+
+
+                            </div>
+                            <div>
+                                <p>Fit</p>
+                                <p>Slim Fit</p>
+                            </div>
+                            <div>
+                                <p>Occasion</p>
+                                <p>Casual</p>
+                            </div>
+                            <div>
+                                <p>Hemline</p>
+                                <p>Curved</p>
+                            </div>
+
+
+
+                        </div>
+                        <div>
+                            <div>
+                                <p>Sleeve Length</p>
+                                <p>Long Sleeves</p>
+
+
+                            </div>
+                            <div>
+                                <p>Fit</p>
+                                <p>Slim Fit</p>
+                            </div>
+                            <div>
+                                <p>Occasion</p>
+                                <p>Casual</p>
+                            </div>
+                            <div>
+                                <p>Hemline</p>
+                                <p>Curved</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="userrating">
+
+                    <div id="rating">
 
 
 
                         <div>
                             <div>
-                                <div>
-                                    <p>Sleeve Length</p>
-                                    <p>Long Sleeves</p>
-
-
-                                </div>
-                                <div> <p>Fit</p>
-                                    <p>Slim Fit</p>
-                                </div>
-                                <div> <p>Occasion</p>
-                                    <p>Casual</p>
-                                </div>
-                                <div> <p>Hemline</p>
-                                    <p>Curved</p>
-                                </div>
-
-
-
+                                <h5>RATING <i class="fa-regular fa-star"></i></h5>
                             </div>
                             <div>
-                                <div>
-                                    <p>Sleeve Length</p>
-                                    <p>Long Sleeves</p>
-
-
-                                </div>
-                                <div> <p>Fit</p>
-                                    <p>Slim Fit</p>
-                                </div>
-                                <div> <p>Occasion</p>
-                                    <p>Casual</p>
-                                </div>
-                                <div> <p>Hemline</p>
-                                    <p>Curved</p>
-                                </div>
-
-                            </div>
-                            
-                        </div>
-
-                </div>
-
-                <div id="rating">
-                
-                
-
-                       <div>
-                            <div><h5>RATING <i class="fa-regular fa-star"></i></h5></div>
-                            <div >
                                 <div>4.3</div>
                                 <div><i class="fa-solid fa-star"></i></div>
                             </div>
@@ -600,29 +994,231 @@
                             </div>
 
                         </div>
-                        
-                       
-                      <div>
-                        <DIv>
+
+
+                        <div>
+
                             <p>5 &#9733 <progress value="60" max="100"></progress></p>
                             <p>4 &#9733 <progress value="50" max="100"></progress></p>
                             <p>3 &#9733 <progress value="60" max="100"></progress></p>
                             <p>2 &#9733 <progress value="19" max="100"></progress></p>
                             <p>1 &#9733 <progress value="15" max="100"></progress></p>
-                            <p>1 &#9733 <progress value="15" max="100"></progress></p>
 
-                        </DIv>
 
-                       
-                      </div>
- 
-                    
+                        </div>
+
+
+                    </div>
+
+                    <div id="RATING">
+                        <h5>WHAT CUSTOMERS SAID<i class="fa-regular fa-star"></i></h5>
+                        <span>fit</span>
+                        <p><progress value="77" max="100"></progress>
+                            Just Right (77%)</p>
+
+                        <span>Length</span>
+                        <p><progress value="84" max="100"></progress>Just Right (84%)</p>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <div id="review">
+                    <h6>Customer Photos (84)</h6>
+                    <div>
+
+                        <div><img
+                                src="https://assets.myntassets.com/h_200,q_75,w_200,c_thumb,fl_progressive/assets/images/2022/4/2/bd28a647-a394-43bc-87c7-79a87e93087e1648870585917-IMG20220327220734.jpg">
+                        </div>
+                        <div><img
+                                src="https://assets.myntassets.com/h_200,q_75,w_200,c_thumb,fl_progressive/assets/images/2022/11/23/21d06eda-287a-4b77-a413-70455134fa801669169618129-IMG_20221115_154834_881.jpg">
+                        </div>
+                        <div><img
+                                src="https://assets.myntassets.com/h_200,q_75,w_200,c_thumb,fl_progressive/assets/images/2021/3/18/fb04bbdb-9147-4b7c-9572-a8575c7229a61616089523339-IMG_20210318_231403.jpg">
+                        </div>
+                        <div><img
+                                src="https://assets.myntassets.com/h_200,q_75,w_200,c_thumb,fl_progressive/assets/images/2020/7/4/1c168724-d4aa-48ac-b0d0-ce6842d0fa8a1593871719919-IMG_20200622_121431.jpg"
+                                alt=""></div>
+
+                    </div>
+
+                    <h6>Customer Reviews (574)</h6>
+
+                    <div>
+                        <p>Material Quality is awesome. And color of the shirt is exactly what's featured in the
+                            catalog. And it's somewhat long than I expected but it fits well with any sort of WROGN
+                            jeans. Grab it guys... ❤️</p>
+                        <div><img
+                                src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2020/12/9/33dd315e-2385-40c9-befb-34edac67d76a1607521330248-IMG_20201209_190812.jpg">
+                        </div>
+                        <div><span>Kunal Ghosh </span><span> 6 Dec 2020</span></div>
+                    </div>
+
+
 
                 </div>
 
 
-          </div>
 
+            </div>
+
+
+
+        </div>
+
+
+
+        <div id="similarproduct">
+            <H4>SIMILAR PRODUCTS </H4>
+            <div>
+
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg">
+                    <p>Dennis Lingo</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/2338589/2018/2/6/11517900239214-WROGN-Men-Burgundy-Slim-Fit-Printed-Casual-Shirt-2781517900239060-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10409970/2019/10/29/50d13f27-83e3-471d-ba9f-466ad8ff00bc1572353598682-WROGN-Men-Shirts-2501572353596580-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/6696339/2018/9/3/bdc91f18-e411-437a-9e9f-6dec5fc08b701535972702610-Roadster-Men-Black--Blue-Regular-Fit-Checked-Casual-Shirt-4561535972702394-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/2127876/2017/11/23/11511431472633-Roadster-Men-Black-Regular-Fit-Solid-Casual-Shirt-8801511431472500-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/8217987/2019/3/22/f85d8fad-4624-43ff-9ceb-b7da1bcfbf551553254987279-Roadster-Men-White-Regular-Fit-Solid-Casual-Shirt-4091553254-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/2338698/2018/1/5/11515131207677-WROGN-Men-Shirts-2331515131207651-4.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/1758570/2021/3/19/30bc3403-ba23-44b5-8e4d-15fec323fe1c1616136152597-WROGN-Men-Blue--Grey-Pure-Cotton-Regular-Fit-Checked-Casual--1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+                </div>
+
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10944414/2020/1/23/46552e19-dc97-4087-aa5e-ffd4caaef0761579773965172-Roadster-Men-Shirts-9651579773962600-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+                </div>
+
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/11896062/2020/7/13/6f43cfe0-d1de-4d10-a5c7-6521bb3c1fdc1594642087123-Roadster-Men-Shirts-9741594642084823-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+                </div>
+
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg">
+                    <p>Dennis Lingo</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/2338589/2018/2/6/11517900239214-WROGN-Men-Burgundy-Slim-Fit-Printed-Casual-Shirt-2781517900239060-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10409970/2019/10/29/50d13f27-83e3-471d-ba9f-466ad8ff00bc1572353598682-WROGN-Men-Shirts-2501572353596580-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/6696339/2018/9/3/bdc91f18-e411-437a-9e9f-6dec5fc08b701535972702610-Roadster-Men-Black--Blue-Regular-Fit-Checked-Casual-Shirt-4561535972702394-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+                </div>
+
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/2127876/2017/11/23/11511431472633-Roadster-Men-Black-Regular-Fit-Solid-Casual-Shirt-8801511431472500-1.jpg">
+                    <p>WROGN</p>
+                    <p>Mens Slim fit Casual Shirt</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(Rs.1350 OFF)</span>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <!-- </div> -->
 
 
 
@@ -634,9 +1230,6 @@
 
 
 
-
-
-
-    
 </body>
+
 </html>
