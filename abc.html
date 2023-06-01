@@ -5,12 +5,291 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #screen{
+            border: 1px solid red;
+            /* height: 600px; */
+        }
+
+        #body{
+            border: 1px solid red;
+            /* height: 600px; */
+
+        }
+
+        #body>div:nth-child(1){
+            margin-top: 20px;
+            line-height: 40px;
+            margin-left: 20px;
+        }
+
+        #body>div:nth-child(2){
+            /* border: 1px solid red; */
+            height: 60px;
+            border-bottom: 1px solid grey;
+
+        }
+
+        #leftright{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #left{
+            width: 20%;
+            border: 1px solid green;
+            /* height: 500px; */
+        }
+
+        #left>div{
+            /* green; border: 1px solid  */
+             height: 100px;
+             border-right: 1px solid red;
+
+        }
+
+        #left>div>h4{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #left>div>span{
+            /* border: 1px solid red; */
+            width: 15px;
+            height: 12px;
+            border-radius: 50%;
+             display: inline-block;
+
+        }
+
+        
+
+
+
+         #right{
+            width: 75%;
+            border: 1px solid green;
+             /* height: 500px; */
+        }
+
+        #right>div:nth-child(1){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+        #right>div:nth-child(1)>div{
+            width: 19%;
+            height: 370px;
+            border: 1px solid black;
+        }
+
+        
+        #right>div:nth-child(1)>div>img{
+            width: 100%;
+            height: 70%;
+        }
+
+        #right>div:nth-child(1)>div>P:nth-child(2){
+            font-weight: bold;
+            font-size: small;
+        }
+
+        #right>div:nth-child(1)>div>p:nth-child(3){
+            color: grey;
+
+            font-size: small;
+        }
+
+        #right>div:nth-child(1)>div>span:nth-child(4){
+            font-weight: bold;
+            font-size: small;
+        }
+
+        #right>div:nth-child(1)>div>span:nth-child(5){
+            font-weight: bold;
+            font-size: small;
+            color: grey;
+        }
+
+        #right>div:nth-child(1)>div>span:nth-child(6){
+            font-weight: bold;
+            font-size: small;
+            color: orange;
+        }
+
+
+
+
+
+
+
+    </style>
+
+
 </head>
 <body>
+    <div id="screen">
+        <div>navbar</div>
+        <div id="body">
 
-    <div style="display: none                  ;">hieeeeeeeeeeeeeeeee</div>
-    <div style="width: 500px; margin: auto;border: 3px solid blue;">width jjlkfskjlklkdlka;lkd;lka;k;alks;lk</div>
-    <div style="max-width: 500px; margin: auto; border: 3px solid red;">max width kjaklkjasljlajsllkkjsljslskljs</div>
+            <div>
+                <p> Home / Clothing / <B> Men Tshirts </B></p>
+
+                <p><B> Men Tshirts </B>
+                    - 103823 items</p>
+
+            </div>
+
+            
+            <div>2nbcmnxbxb</div>
+
+            
+            <!-- parent -->
+
+            <div id="leftright">
+
+                <div id="left">
+                    <div>
+                        <h4>COLORS</h4>
+                        <input type="checkbox" />
+                        <span style="background-color: red;"></span >
+                        <label> red</label><br />
+                        <input type="checkbox" />
+                        <span style="background-color:yellow;"></span>
+                        <label>yellow</label><br />
+
+
+                    </div>
+                    <div>
+                        <h4>COLORS</h4>
+                        <input type="checkbox" />
+                        
+                        <label> Green</label><br />
+                        <input type="checkbox" />
+                        <label>Black</label><br />
+
+
+                    </div>
+                    <div>
+                        <h4>COLORS</h4>
+                        <input type="checkbox" />
+                        
+                        <label> Green</label><br />
+                        <input type="checkbox" />
+                        <label>Black</label><br />
+
+
+                    </div>
+                    <div>
+                        <h4>COLORS</h4>
+                        <input type="checkbox" />
+                        <label> Green</label><br />
+                        <input type="checkbox" />
+                        <label>Black</label><br />
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div id="right">
+
+                    <div>
+
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2314372/2018/6/19/29e8ddfd-6f5f-43fd-8b71-dfa8ac6cef681529385860869-HRX-by-Hrithik-Roshan-Men-Charcoal-Grey-Slim-Advanced-Rapid--1.jpg" >
+                             <p>HRX by hritik roshan</p>
+                             <p>mens shirt with causual fit</p>
+                             <span>Rs.499</span>
+                             <span><s>Rs.1000</s></span>
+                             <span>(Rs.500 OFF)</span>
+
+
+
+                        </div>
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2314372/2018/6/19/29e8ddfd-6f5f-43fd-8b71-dfa8ac6cef681529385860869-HRX-by-Hrithik-Roshan-Men-Charcoal-Grey-Slim-Advanced-Rapid--1.jpg" >
+                             <p>HRX by hritik roshan</p>
+                             <p>mens shirt with causual fit</p>
+                             <span>Rs.499</span>
+                             <span><s>Rs.1000</s></span>
+                             <span>(Rs.500 OFF)</span>
+
+
+
+                        </div>
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2314372/2018/6/19/29e8ddfd-6f5f-43fd-8b71-dfa8ac6cef681529385860869-HRX-by-Hrithik-Roshan-Men-Charcoal-Grey-Slim-Advanced-Rapid--1.jpg" >
+                             <p>HRX by hritik roshan</p>
+                             <p>mens shirt with causual fit</p>
+                             <span>Rs.499</span>
+                             <span><s>Rs.1000</s></span>
+                             <span>(Rs.500 OFF)</span>
+
+
+
+                        </div>
+
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2314372/2018/6/19/29e8ddfd-6f5f-43fd-8b71-dfa8ac6cef681529385860869-HRX-by-Hrithik-Roshan-Men-Charcoal-Grey-Slim-Advanced-Rapid--1.jpg" >
+                             <p>HRX by hritik roshan</p>
+                             <p>mens shirt with causual fit</p>
+                             <span>Rs.499</span>
+                             <span><s>Rs.1000</s></span>
+                             <span>(Rs.500 OFF)</span>
+
+
+
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+           
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+  
 
    
 </body>
