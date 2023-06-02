@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
+    <title>Profile</title>
 
     <style>
         * {
@@ -14,91 +16,373 @@
             box-sizing: border-box;
         }
 
-        body{
-            height: 700px;
-            width: 100%;
-             border: 1px solid red;
-            font-family: 'Assistant' !important;
-            
-        }
+       
 
-        
-        body>div:nth-child(1){
-            border: 1px solid red;
+
+        body>div:nth-child(1) {
+            /* border: 1px solid red; */
             padding-bottom: 25px;
-           
+
         }
 
-        #Profile{
+        #navbar {
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
+            position: fixed;
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
 
-             height: 500px;
-              width: 100%;
-             border: 1px solid green;
-            
         }
 
-        #Profile>div{
+        #logo {
+            width: 5%;
+            height: 70px;
+            /* border: 1px solid red; */
+            padding-top: 10px;
+            margin-left: 50px;
+
+        }
+
+        #sections {
+            width: 35%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+            font-size: small;
+            padding-top: 23px;
+            color: #282c3f;
+            margin-right: 15px;
+        }
+
+        #search {
+            width: 30%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            /* justify-content: space-around; */
+        }
+
+        #search>div {
+            /* border: 1px solid red; */
+            background-color: #f5f5f6;
+
+        }
+
+        #search>div:nth-child(1) {
+            /* border: 1px solid red; */
+            height: 40px;
+            width: 10%;
+            margin-top: 15px;
+            padding-top: 10px;
+            padding-left: 8px;
+            color: #717288;
+            /* background-color: #e4e4e4; */
+
+        }
+
+        #search>div:nth-child(2) {
+            /* border: 1px solid red; */
+            height: 40px;
+            width: 85%;
+            margin-top: 15px;
+            /* background-color: #e4e4e4; */
+
+        }
+
+        #search>div:nth-child(2)>input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #f5f5f6;
+        }
+
+
+
+
+        #icons {
+            width: 15%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #icons>div {
+            margin-top: 20px;
+
+        }
+
+        #icons>div>i:nth-child(1) {
+            /* border: 1px solid red; */
+            color: #282c3f;
+
+        }
+
+        #icons>div>p {
+            color: #282c3f;
+            font-size: small;
+            margin-left: -4px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        #Profile {
+
+            width: 100%;
+            border: 1px solid white;
+
+        }
+
+        #Profile>div {
             width: 70%;
-            border: 3px solid grey;
+            /* border: 3px solid grey; */
             margin: auto;
 
 
         }
 
-        
-        #Profile>div:nth-child(1){
+
+        #Profile>div:nth-child(1) {
             /* font-size: 12px; */
-            margin-top: 80px;
+            margin-top: 150px;
+
         }
 
-        #Profile>div>div:nth-child(1)>span{
+        #Profile>div>div:nth-child(1) {
+            border-bottom: 1px solid#d4d4d9;
+            padding-bottom: 13px;
+        }
+
+        #Profile>div>div:nth-child(1)>span {
             font-size: small;
-            
+
         }
-        
 
 
-        #profilepage{
+
+        #profilepage {
             display: flex;
         }
 
-        #profilepage>div:nth-child(1){
+        #profilepage>div:nth-child(1) {
             /* border: 1px solid yellow; */
             width: 20%;
-            height: 200px;
-            border-right: 1px solid grey;
+            /* height: 200px; */
+            border-right: 1px solid#d4d4d9;
         }
 
-        #profilepage>div:nth-child(1)>div{
+        #profilepage>div:nth-child(1)>div {
             height: 100%;
             width: 90%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+        }
+
+        #profilepage>div:nth-child(1)>div>div {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 22px;
+        }
+
+        #profilepage>div:nth-child(1)>div>div>h5 {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-top: 1px solid #d4d4d9;
+            padding-top: 20px;
+            color: gray;
         }
 
 
-
-
-        #profilepage>div:nth-child(2){
-            border: 1px solid yellow;
-            height: 200px;
-            width: 80%;
+        #profilepage>div:nth-child(2) {
+            border: 1px solid #d4d4d9;
+            width: 75%;
+            margin-top: 15px;
+            margin-left: 15px;
+            overflow-x: scroll;
         }
 
 
+        #profilepage>div:nth-child(2)>div:nth-child(1) {
+            /* border: 1px solid yellow; */
+            /* height: 200px; */
+            width: 65%;
+            margin: auto;
+        }
+
+        #profilepage>div:nth-child(2)>div:nth-child(1)>p:nth-child(1) {
+            color: #282C3F;
+            font-weight: 600;
+            font-size: 18px;
+            padding-bottom: 20px;
+            padding-top: 30px;
+            border-bottom: 1px solid#d4d4d9;
+        }
+
+        table {
+            margin-left: 25px;
+            color: #282C3F;
+        }
+
+        tbody>tr>td {
+            width: 200px;
+            /* margin: 10px; */
+            /* padding-right: 40px; */
+            padding-top: 10px;
+            padding-bottom: 15px;
+            font-size: smaller;
+            text-align: left;
+        }
+
+        #profilepage>div:nth-child(2)>div:nth-child(1)>div:nth-child(3) {
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 42PX;
+
+        }
+
+        #button {
+            width: 95%;
+            height: 100%;
+            border-radius: 2PX;
+            border: none;
+            font-weight: bold;
+            color: #eaeaec;
+            background-color: #ff3f6c;
+            font-size: small;
+            margin-left: 10px;
+        }
+/* 
+        foote */
 
 
 
+        /* #screen>div:nth-child(3) {
+            border: 2px solid black;
+
+            background-color: #fafbfcf5;
+            margin-top: 50px;
+
+        } */
+
+       body>div:nth-child(3){
+        /* border: 1px solid black; */
+        margin-top: 150px;
+       background-color: #f7f8f9;
+       }
+ 
+       
+
+        #footercontent {
+            /* height: 500px; */
+            width: 75%;
+            /* border: 4px solid red; */
+            margin-top: 150px;
+            /* background-color: #696e79; */
+            margin: auto;
+
+        }
+
+        #footercontent>div:nth-child(1) {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        #footercontent>div:nth-child(1)>div:nth-child(1) {
+            line-height: 25px;
+            font-size: small;
+            color: gray;
+            /* border: 1px solid red; */
+        }
+
+        #footercontent>div:nth-child(1)>div:nth-child(1)>span {
+            font-size: x-small;
+            font-weight: bolder;
+            color: #282c3f;
+            width: 20%;
+
+        }
 
 
+        #footercontent>div:nth-child(1)>div:nth-child(2) {
+            line-height: 25px;
+            font-size: small;
+            color: gray;
+            width: 20%;
+            /* border: 1px solid red; */
+        }
+
+        #footercontent>div:nth-child(1)>div:nth-child(2)>span {
+            font-size: x-small;
+            font-weight: bolder;
+            color: #282c3f;
+        }
+
+        #footercontent>div:nth-child(1)>div:nth-child(3) {
+            line-height: 30px;
+            font-size: small;
+
+            width: 28%;
+            /* border: 1px solid red; */
+        }
+
+        #footercontent>div:nth-child(1)>div:nth-child(3)>span {
+            font-size: x-small;
+            font-weight: bolder;
+            color: #282c3f;
+        }
+
+        #intouch {
+            /* border: 1px solid black; */
+            display: flex;
+        }
+
+        #intouch>div {
+
+            /* border: 1px solid red; */
+            width: 49%;
+            height: 42px;
+            margin-left: 5px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+        }
+
+        .color {
+            color: #696e79;
+            word-spacing: 10px;
+        }
+
+       
+        #footercontent>div:nth-child(1)>div:nth-child(4) {
+
+            font-size: small;
+            color: gray;
+            width: 27%;
+            /* border: 1px solid red; */
+        }
+
+        #footercontent>div:nth-child(1)>div:nth-child(4)>div {
+            display: flex;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+        }
 
 
+        #footercontent>div:nth-child(2) {
+            /* border: 1px solid red; */
+           
+            font-size: small;
+            color: #696e79;
+            margin-top: 100px;
+        }
 
-
-
-
-
-
-
+       
 
 
 
@@ -109,74 +393,47 @@
 
 
 </head>
+
 <body>
 
-    <div> navbar</div>
-
-    <div id="Profile">
-
-        <div id="div">
-
-            <div>
-                <h3>Account</h3>
-     
-               <span>Pooja Vishwakarma   </span>  
-     
-             </div>
-
-           <div id="profilepage">
-                 <!-- LEFT -->
-
-                <div>
-                    <div>
-
-                       
-                        <div>Overview</div>
-                        <div>
-                            <H6>ORDERS</H6>
-                             Orders & Returns
-                        </div>
-                        <div>
-                            
-                        </div>
-                        <div>4</div>
-                        <div>5</div>
-
-
-
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-                <!-- RIGHT -->
-                <div>2</div>
-
-             </div>
-
-
+    <div id="navbar">
+        <div id="logo">
+            <img src="https://gumlet.assettype.com/afaqs%2F2021-01%2F51966c7c-de5b-4092-ac03-e1f5e6152b32%2Fmyntra.png?auto=format%2Ccompress&w=640&dpr=1.0"
+                height="85%" width="80%">
+        </div>
+        <div id="sections">
+            <div>MEN</div>
+            <div>WOMEN</div>
+            <div>KIDS</div>
+            <div>HOME & LIVING</div>
+            <div>BEAUTY</div>
+            <div>STUDIO</div>
 
 
 
         </div>
-        
+        <div id="search">
+            <div><i class="fa-solid fa-magnifying-glass"></i> </div>
+            <div>
+                <input type="text" placeholder="search for products,brands and more">
+            </div>
 
 
 
+        </div>
+        <div id="icons">
+            <div><i class="fa-regular fa-user"></i>
+                <p>Profile</p>
+            </div>
+            <div><i class="fa-regular fa-heart"></i>
+                <p>Wishlist</p>
+            </div>
+            <div><i class="fa-solid fa-bag-shopping"></i>
+                <p>Bag</p>
+            </div>
 
 
-
-
-
-
-
-
-
+        </div>
 
 
 
@@ -184,11 +441,247 @@
 
     </div>
 
+    <div id="Profile">
+
+        <div id="div">
+
+            <div>
+                <h4>Account</h4>
+
+                <span>Pooja Vishwakarma </span>
+
+            </div>
+
+            <div id="profilepage">
+                <!-- LEFT -->
+
+                <div>
+                    <div>
+
+
+                        <div>Overview</div>
+                        <div>
+                            <H5>ORDERS</H5>
+                            <div>Orders & Returns</div>
+                        </div>
+                        <div>
+                            <H5>CREDIT</H5>
+                            <div>Coupans</div>
+                            <div>MyntraCredit</div>
+                            <div>Myncash</div>
+                        </div>
+                        <div>
+                            <H5>ACCOUNT</H5>
+                            <div><strong style="color:#14cda8;">Profile</strong></div>
+                            <div>Saved Cards</div>
+                            <div>Addresses</div>
+                            <div>Myntra Insiders</div>
+
+                        </div>
+                        <div>
+                            <H5>LEGAL</H5>
+                            <div>Terms of Use</div>
+                            <div>Privacy Policies</div>
+
+
+                        </div>
 
 
 
+                    </div>
+
+
+                </div>
+
+                <!-- RIGHT -->
+                <div>
+
+                    <div>
+                        <p>Profile Details</P>
+
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td>Full Name</td>
+                                    <td>Pooja Vishwakarma</td>
+
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>Mobile Number</td>
+                                    <td> 8286268288</td>
+
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>Email ID </td>
+                                    <td> poojarv366@gmail.com</td>
+
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>Gender </td>
+                                    <td> FEMALE</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>Date of Birth </td>
+                                    <td> not added</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>Location</td>
+                                    <td> not added</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>Alternate Mobile</td>
+                                    <td> not added</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>Hint Name</td>
+                                    <td> not added</td>
+
+                                </tr>
+
+
+                            </tbody>
+
+
+                        </table>
+
+                        <div>
+                            <button id="button">EDIT</button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+       
+
+
+    </div>
 
 
     
+    <div>
+        <div id="footercontent">
+
+            <div>
+                <div>
+
+                    <span>ONLINE SHOPPING</span>
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Kids</p>
+                    <p>Home&Living</p>
+                    <p>Beauty</p>
+                    <p>Gift Cards</p>
+                    <p>Myntra Insiders </p>
+
+
+
+                    <span>USEFUL LINKS</span>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                    <p>Site Maps</p>
+                    <p>Corporation Information</p>
+                    <p>Whitehat</p><br>
+
+                </div>
+
+                <div>
+                    <span>CUSTOMER POLICIES</span>
+                    <p>Contact Us</p>
+                    <p>FAQ</p>
+                    <p>T&C</p>
+                    <p>Terms Of Use </p>
+                    <p>Track Orders</p>
+                    <p>Shipping</p>
+                    <p>Cancellation</p>
+                    <p>Returns</p>
+                    <p>Privacy Policy</p>
+                    <p>Grievance Officer</p>
+                </div>
+
+                <div>
+                    <span>EXPERIENCE MYNTRA APP ON MOBILE</span>
+                    <DIv id="intouch">
+                        <div>
+                            <img src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                                height="100%" width="100%">
+                        </div>
+                        <div>
+                            <img src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                                width="100%" height="100%">
+
+                        </div>
+
+                    </DIv>
+
+                    <span>KEEP IN TOUCH</span>
+                    <div class="color">
+                        <i class="fa-brands fa-square-facebook fa-xl"></i>
+                        <i class="fa-brands fa-twitter fa-xl"></i>
+                        <i class="fa-brands fa-youtube fa-xl"></i>
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div>
+                        <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+                            width="18%" height="18%">
+                        <p><b>100% ORIGINAL</b> guarantee for </br>all products at myntra.com</p>
+
+                    </div>
+                    <div>
+
+                        <img src="https://assets.myntassets.com/assets/images/retaillabs/2023/5/22/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png"
+                            width="18%" height="18%">
+                        <p><b>Return within 14days</b> of </br>receiving your order</p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+           
+      
+     
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
 </body>
+
 </html>
