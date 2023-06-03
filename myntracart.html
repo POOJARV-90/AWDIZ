@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+        #screen{
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid red; */
+        }
+
+        #navigation{
+
+            width: 100%;
+            height: 65px;
+            /* border: 1px solid grey; */
+            justify-content: space-between;
+            display: flex;
+            border-bottom: 1px solid grey;
+        }
+
+       
+
+        #navigation>div:nth-child(1){
+            width: 10%;
+            /* border: 1px solid grey; */
+        }
+
+         #navigation>div:nth-child(1)>div{
+             width: 50%;
+            /* border: 1px solid grey; */
+            margin: auto;
+            /* padding-top: 15px; */
+
+         }
+
+        #navigation>div:nth-child(2){
+            width: 25%;
+            /* border: 1px solid grey; */
+            text-align: center;
+            font-weight: 600;
+            font-size: 12px;
+            padding-top: 20px;
+            color: grey;
+        }
+
+        /* #navigation>div:nth-child(2)>div{
+             /* width: 40%; */
+            /* border: 1px solid grey; */
+            
+         */
+
+        #navigation>div:nth-child(3){
+            width: 15%;
+            /* border: 1px solid grey; */
+
+        }
+
+        #navigation>div:nth-child(3)>div{
+           
+            /* border: 1px solid grey; */
+            display: flex;
+            margin-top: 10px;
+
+        }
+        #navigation>div:nth-child(3)>div>div:nth-child(1){
+           
+           /* border: 1px solid grey; */
+           width: 15%;
+           height: 30px;
+       }
+
+       #navigation>div:nth-child(3)>div>div:nth-child(2){
+        font-weight: 600;
+            font-size: 11px;
+            padding-top: 10px;
+            color: grey;
+          
+            letter-spacing: 2px;
+       }
+
+
+       /* ===============cartdetails============================== */
+         
+       #cartdetails{
+        width: 100%;
+        /* border: 1px solid green; */
+        height: 500px;
+       }
+
+       #cartdetails>div{
+        width: 70%;
+        /* border: 1px solid green; */
+        height: 500px;
+        margin: auto;
+        display: flex;
+       }
+
+       #cartdetails>div>div:nth-child(1){
+        width: 60%;
+        /* border: 1px solid green; */
+       }
+
+       #cartproductdetails{
+        width: 96%;
+        margin-top: 20PX;
+        
+        height: 500px;
+        /* border: 1px solid green;   */
+        }
+
+        #cartproductdetails>div:nth-child(1){
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #d4d4d9;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border-radius: 2px;
+            padding-left: 10px;
+        }
+
+        #cartproductdetails>div:nth-child(1)>div:nth-child(1){
+            font-size: small;
+            font-weight: 600;
+            width: 40%;
+        }
+
+        #cartproductdetails>div:nth-child(1)>div:nth-child(2){
+            font-size: small;
+            font-weight: 600;
+            
+            width: 28%;
+        }
+        #button{
+            border: 1px solid #FF3F6C;
+            width: 90%;
+            height: 30px;
+            font-weight: bold;
+            font-size: x-small;
+            color: #FF3F6C;
+            border-radius: 2px ;
+            background-color: transparent;
+        }
+        #button:hover{
+            background-color: rgb(255, 242, 245);
+        }
+
+        #cartproductdetails>div:nth-child(2)>div{
+           
+            margin-top: 10px;
+            border: 1px solid #d4d4d9;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 2px;
+            padding-left: 10px;
+        }
+
+        #cartproductdetails>div:nth-child(2)>div>div:nth-child(1){
+            font-size: small;
+            font-weight: 600;
+            
+        }
+
+        #cartproductdetails>div:nth-child(2)>div>li:nth-child(2){
+            font-size: x-small;
+            color: gray;
+            /* font-weight: 600; */  
+           
+        }
+
+        #cartproductdetails>div:nth-child(2)>div>select:nth-child(3){
+            font-size: small;
+            color: #FF3F6C;
+            font-weight: 600;  
+            border: none;
+           
+        }
+
+        #cartproductdetails>div:nth-child(3){
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            /* height: 50px; */
+            padding-top: 20px;
+            padding-left: 10px;
+           
+        }
+
+        #cartproductdetails>div:nth-child(3)>div:nth-child(1){
+            font-size: small;
+            font-weight: 700;
+
+        }
+
+        #cartproductdetails>div:nth-child(3)>div:nth-child(2){
+            font-size: x-small;
+            font-weight: 700;
+            color: grey;
+            /* height: 30px; */
+            /* border: 1px solid black; */
+            display: flex;
+
+        }
+
+        #cartproductdetails>div:nth-child(3)>div:nth-child(2)>div:nth-child(1){
+
+            border-right: 1px solid grey;
+            /* border: 1px solid green; */
+            /* height:40px ; */
+            padding-right: 20px;
+            padding-bottom: 10px;
+        }
+
+        #cartproductdetails>div:nth-child(3)>div:nth-child(2)>div:nth-child(2){
+            padding-left: 20px;
+        }
+
+        #cartproductdetails>div:nth-child(4){
+            border: 1px solid #d4d4d9;
+            border-radius: 2PX;
+            display: flex;
+           
+            /* height: 50px; */
+            margin-top: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+           
+        }
+
+        #cartproductdetails>div:nth-child(4)>div:nth-child(1){
+            height: 150px;
+            /* border: 1px solid red; */
+            width: 25%;
+            
+        }
+
+        #imginfo>div:nth-child(4){
+            display: flex;
+
+        }
+
+        #imginfo{
+            margin-left: 13px;
+
+            font-size: small;
+            line-height: 22PX;
+            padding-left: 10px;
+        }
+
+        #imginfo>p:nth-child(1){
+           font-weight: 650;
+
+        }
+        /* #imginfo>p:nth-child(2){
+           color: grey;
+
+        } */
+        #imginfo>p:nth-child(3){
+           color: grey;
+           font-size: X-small;
+
+        }
+        #imginfo>div:nth-child(4)>div{
+            font-weight: bold;
+        }
+
+        #imginfo>div:nth-child(4)>div>select{
+            border: none;
+           
+            
+        }
+        #imginfo>span:nth-child(5){
+
+            font-weight: bold;
+        }
+        #imginfo>span:nth-child(6){
+
+         color: gray;
+         }
+
+         #imginfo>span:nth-child(7){
+
+        color:#FF3F6C;
+        }
+
+        #cartproductdetails>div:nth-child(5){
+            border: 1px solid #d4d4d9;
+            border-radius: 2PX;
+            display: flex;
+           
+            /* height: 50px; */
+            margin-top: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: small;
+            font-weight: bold;
+            justify-content: space-between;
+            padding-left: 10px;
+           
+        }
+
+        #cartproductdetails>div:nth-child(5)>p:hover{
+          border-bottom: 1px solid black;
+        }
+
+
+
+
+     /* ================details right start from here======================== */
+
+
+
+       #cartdetails>div>div:nth-child(2){
+        width: 40%;
+        border: 1px solid green;
+       }
+
+       
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="screen">
+
+        <div id="navigation">
+
+            <div>
+
+                <div>
+                    <img src="https://gumlet.assettype.com/afaqs%2F2021-01%2F51966c7c-de5b-4092-ac03-e1f5e6152b32%2Fmyntra.png?auto=format%2Ccompress&w=640&dpr=1.0" width="100%" height="100%">
+                </div>
+
+            </div>
+            <div>
+                BAG - - - - - - - - - - ADDRESS - - - - - - - - -PAYMENT
+
+
+            </div>
+            <div>
+                <div>
+                    <div><img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" width="100%" height="100%"></div>
+                    <div>100% SECURE</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="cartdetails">
+
+            <div>
+                <div>
+
+                    <div id="cartproductdetails">
+
+                        <DIV>
+                            <div>Check Deliviry time & service</div>
+                            <div>
+                                <button id="button">ENTER PIN CODE</button>
+
+                            </div>
+
+                        </DIV>
+
+                        <div>
+                            <div>
+                                <div> <i class="fa-regular fa-sun"></i>Available Offers</div>
+                                <li>30% Instant Discount on ICICI Bank and Debit Cards On a Min spend of Rs 3000</li>
+                               <select ><option >Show More</option> </select>
+
+                            </div>
+                        
+                        </div>
+
+                        <div>
+                            <div>
+                                <input type="checkbox"> 0 /1 ITEMS SELECTED
+
+                            </div>
+                            <div>
+                                <div>REMOVE</div>
+                                <div>MOVE TO WISHLIST</div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15096882/2021/8/30/c344b1e1-76fe-4b23-8f74-d78c0ea435561630304263230-Berrylush-Black-Puff-Sleeve-Allover-Cherry-Print-Dress-25116-1.jpg" height="100%" width="100%">
+
+                            </div>
+                            <div id="imginfo">
+                                <p>Berrylusch</p>
+                                <p>stunning floral seetheart neck dress</p>
+                                <p>Sold by: AJHNS TECH SOLUTIONS PRIVATE LIMITED</p>
+                                <div >
+                                <div>size:
+                                    <select > 
+                                    
+                                        <Option>S</Option>
+                                        <Option>M</Option>
+                                        <Option>XL</Option>
+                                        <Option>xxl</Option>
+                                     </select>
+
+
+                                </div>
+
+                                <div>Qty:
+                                    <select> 
+                                    
+                                        <Option>1</Option>
+                                        <Option>2</Option>
+                                        <Option>3</Option>
+                                        <Option>4</Option>
+                                   </select>
+
+
+                                </div>
+
+                                </div>
+
+                                <span>Rs.882</span>
+                                <span><s>Rs.2000</s></span>
+                                <span>60% Offs</span>
+
+                                <p>
+                                    <i class="fa-solid fa-rotate-left"></i> 
+                                    <b>14days</b> return available</p>
+                                
+
+
+                            </div>
+
+                            
+
+                        </div>
+
+                        <div>
+                           
+                            <p> <i class="fa-regular fa-bookmark fa-lg "></i> Add More From Wishlist</p>
+                            <strong>> </strong>
+                           
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- =============================== -->
+                <div>2</div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div >
+
+
+
+
+
+    
+</body>
+</html>
