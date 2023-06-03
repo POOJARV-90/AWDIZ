@@ -327,6 +327,131 @@
         border: 1px solid green;
        }
 
+       #placeorder{
+
+         width: 95%;
+        border: 1px solid green;
+        margin-left: 10px;
+
+       }
+       /* ========= */
+
+       #placeorder>div:nth-child(1){
+        border-bottom: 1px solid gray; 
+        padding-top: 15px;
+        padding-bottom: 15px;
+       }
+
+        #placeorder>div>div:nth-child(2){
+            display: flex;
+            justify-content: space-between;
+            font-size: small;
+            line-height: 30px;
+        }
+        #placeorder>div:nth-child(1)>div:nth-child(2)>p{
+            font-size: small;
+            font-weight: 600;
+
+        }
+
+        #placeorder>div:nth-child(1)>div:nth-child(2)>button:nth-child(2){
+            border: 1px solid #FF3F6C;
+            width: 80px;
+            font-size: x-small;
+            font-weight: bold;
+            color: #FF3F6C;
+            background-color: transparent;
+        }
+
+        #placeorder>div:nth-child(1)>div:nth-child(2)>button:nth-child(2):hover{
+            background-color: #e9ced4;
+        }
+
+        #placeorder>div:nth-child(2){
+        border-bottom: 1px solid gray; 
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 30px;
+       }
+
+       #placeorder>div:nth-child(2)>h5{
+        font-size: x-small;
+        font-weight: 800;
+       }
+       #placeorder>div:nth-child(2)>label{
+        font-size: small;
+        font-weight: 700;
+        margin-left: 8px;
+       }
+
+
+        #placeorder>div:nth-child(2)>div:nth-child(4){
+            border: 1px solid black;
+            display: flex;
+          
+        }
+
+        #placeorder>div:nth-child(2)>div:nth-child(4)>div{
+            border: 1px solid grey;
+            margin-left: 15px;
+            width: 17%;
+            height: 30px;
+            text-align: center;
+            border-radius: 13px;
+            font-weight: 700;
+            font-size: small;
+            color: black;
+            /* padding-top: 5px; */
+            
+        }
+
+        #placeorder>div:nth-child(2)>h4:nth-child(5){
+            color: #FF3F6C;
+            font-size: small;
+        }
+
+        #total{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+      
+        #total>tbody:nth-child(1)>tr{
+            width: 100px;
+            font-size: small;
+        }
+        
+        #total>tbody:nth-child(1)>tr>td:nth-child(2){
+            border: 1px solid red;
+            text-align: right;
+            /* width: 100px; */
+           
+        }
+
+        #totalamt>div:nth-child(1){
+            display: flex;
+            justify-content: space-between;
+            font-size: medium;
+            font-weight: 600;
+            border-top: 1px solid gray;
+            padding-top: 10px;
+        }
+
+        #totalamt>div:nth-child(2){
+
+        }
+
+       
+
+       
+
+
+
+
+
+
+
+
        
 
 
@@ -468,7 +593,107 @@
 
                 </div>
                 <!-- =============================== -->
-                <div>2</div>
+                <div>
+
+                    <div id="placeorder">
+                        <div>
+                            <h5> COUPAN</h5>
+
+                            <div> <p><i class="fa-solid fa-tag"></i>Apply Coupans</p>
+                            <button>APPLY</button>
+                          </div>
+                           
+
+
+                        </div>
+
+                        <div>
+                            <h5> SUPPORT TRANSPORMARIVE SOCIAL WORK IN INDIA</h5>
+
+                            <input type="checkbox"> <label for=""> Support Us</label>
+
+                            <div>
+                                <div>10₹</div>
+                                <div>20₹</div>
+                                <div>30₹</div>
+                                 
+
+                            </div>
+
+                            <h4>Know More</h4>
+                           
+
+                        </div>
+
+                        <div>
+
+                            <h5>PRICE DETAILS(1 items)</h5>
+
+                            <table id="total">
+
+                                <tbody>
+                                    <tr>
+                                        <td>Total MRP</td>
+                                        <td>₹2000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Discount On MRP</td>
+                                        <td>-₹1280</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Coupan Discount</td>
+                                        <td>Apply Coupans</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Convinience fee <b>know more</b></td>
+                                        <td>₹90</td>
+                                    </tr>
+
+
+                                </tbody>
+                               
+
+                            </table>
+
+                            <div id="totalamt">
+
+                                <div>
+                                    <div>Total Amount</div>
+                                    <div>₹981</div>
+                                </div>
+
+                                <div>
+                                    <button>PLACE ORDER</button>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
 
 
 
