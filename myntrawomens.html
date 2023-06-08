@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>womens</title>
+
+    <style>
+        * {
+            /* font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; */
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #screen {
+            width: 100%;
+            border: 1px solid red;
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        #navbar{
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
+            position: fixed;
+            box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+            top: 0%;
+        }
+        #logo{
+            width: 5%;
+            height: 70px;
+            /* border: 1px solid red; */
+            padding-top: 10px;
+            margin-left: 50px;
+           
+        }
+        #sections{
+            width: 35%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+            font-size: small;
+            padding-top: 23px;
+            color: #282c3f;
+            margin-right: 15px;
+        }
+        #search{
+            width: 30%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            /* justify-content: space-around; */
+        }
+         #search>div{
+             /* border: 1px solid red; */
+           background-color: #f5f5f6;
+
+         }
+        
+        #search>div:nth-child(1){
+            /* border: 1px solid red; */
+            height: 40px;
+            width: 10%;
+            margin-top: 15px;
+            padding-top: 10px;
+            padding-left: 8px;
+            color: #717288;
+            /* background-color: #e4e4e4; */
+
+        }
+        #search>div:nth-child(2){
+            /* border: 1px solid red; */
+            height: 40px;
+            width: 85%;
+            margin-top: 15px;
+            /* background-color: #e4e4e4; */
+
+        }
+        #search>div:nth-child(2)>input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #f5f5f6;
+        }
+
+       
+
+
+        #icons{
+            width: 15%;
+            height: 70px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #icons>div{
+            margin-top: 20px;
+
+        }
+         #icons>div>i:nth-child(1){
+            /* border: 1px solid red; */
+             color: #282c3f;
+
+         }
+        #icons>div>p{
+              color: #282c3f;
+            font-size: small;
+            margin-left: -4px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+
+        #main {
+            width: 100%;
+            border: 1px solid red;
+
+        }
+        #main>div:nth-child(1){
+            line-height: 50px;
+            padding-left: 30px;
+        }
+
+        #main>div>span:nth-child(3){
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: small;
+        }
+        #main>div>h4:nth-child(4){
+            margin-bottom: 20px;
+        }
+
+        #body {
+            display: flex;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+
+        #left {
+            width: 18%;
+           
+
+        }
+
+        #left>div {
+            border-bottom: 1px solid #80828d;
+            line-height: 25px;
+            padding-left: 20px;
+            padding-bottom: 20PX;
+            font-size: small;
+            margin-top: 15PX;
+
+          
+
+        }
+
+       
+
+        #left>div>div:nth-child(1) {
+            justify-content: space-evenly;
+            width: 100%;
+            /* background-color: aqua; */
+            margin-bottom: 10px;
+            font-weight: bold;
+            justify-content: space-between;
+            display: flex;
+            /* font-size: 700px; */
+
+        }
+
+        #left>div>div:nth-child(1)>i:nth-child(2) {
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            display: inline-block;
+            background-color: #e8e9ee;
+            border-radius: 50%;
+            /* margin-left: 110px; */
+            color: #80828d;
+            margin-right: 10px;
+
+        }
+
+       
+        #left>div>label {
+            margin-left: 12px;
+        }
+
+        #left>div>span {
+            width: 15px;
+            height: 15px;
+            /* padding: 5px; */
+            margin-left: 12px;
+            display: inline-block;
+            background-color: #e8e9ee;
+            border-radius: 50%;
+            /* margin-left: 110px; */
+            color: #80828d;
+            /* margin-right: 10px; */
+        }
+
+        #right {
+            width: 85%;
+            /* border: 1px solid red; */
+            /* height: 400px; */
+            
+
+        }
+
+        #right>div:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+           
+        }
+
+        #right>div:nth-child(1)>div:nth-child(2) {
+            border: 1px solid #d4d5d9;
+            padding: 8.5px;
+            
+
+        }
+
+
+        #right>div:nth-child(2){
+            /* border: 1px solid red; */
+            border-top: 1px solid #80828d;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* border-right: 1px solid red; */
+            border-left: 1px solid #80828d;
+        }
+
+        #right>div:nth-child(2)>div{
+            /* border: 1px solid grey; */
+            /* height: 400px; */
+            width: 22%;
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+
+        #right>div:nth-child(2)>div:hover{
+           box-shadow: 0 4px 12px 0 rgb(153, 152, 152);
+         }
+
+        #right>div:nth-child(2)>div>img{
+            width: 100%;
+            height: 80%;
+        }
+
+        #right>div:nth-child(2)>div>p:nth-child(2),span:nth-child(4){
+            font-weight: bold;
+            color: #3b3d44; 
+            font-size: small;
+            margin-left: 10px;
+        }
+
+        #right>div:nth-child(2)>div>p:nth-child(3),span:nth-child(5){
+            font-size: small;
+            color: #80828d;
+            margin-left: 10px;
+        }
+
+        #right>div:nth-child(2)>div>span:nth-child(6){
+            
+            color: #ff89a5; 
+            font-size: small;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="logo">
+                <img src="https://gumlet.assettype.com/afaqs%2F2021-01%2F51966c7c-de5b-4092-ac03-e1f5e6152b32%2Fmyntra.png?auto=format%2Ccompress&w=640&dpr=1.0" 
+                height="85%" width="80%">
+            </div>
+            <div id="sections">
+                <div>MEN</div>
+                <div>WOMEN</div>
+                <div>KIDS</div>
+                <div>HOME & LIVING</div>
+                <div>BEAUTY</div>
+                <div>STUDIO</div>
+                
+
+
+            </div>
+            <div id="search">
+                <div><i class="fa-solid fa-magnifying-glass"></i> </div>
+                <div>  
+                    <input type="text" placeholder="search for products,brands and more">
+                </div>
+
+
+
+            </div>
+            <div id="icons">
+                <div><i class="fa-regular fa-user"></i>
+                <p>Profile</p>
+            </div>
+            <div><i class="fa-regular fa-heart"></i>
+                    <p>Wishlist</p></div>
+            <div><i class="fa-solid fa-bag-shopping"></i>
+                    <p>Bag</p></div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+        <div id="main">
+            <div>
+                <span>home  / </span> <span>Clothing / </span> <span>Womens Western Wear</span>
+                <h4> Womens Western Wear</h4>
+            </div>
+            <div id="body">
+                <div id="left">
+                    <div>
+                        <h3>FILTERS</h3>
+                    </div>
+
+                    <div>
+                        <div><span> CATEGORIES</span> <i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Tops</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Dresses</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Tshirts</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Trousers</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Jeans</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Sweatshirts</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Sweaters</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Shirts</label> </br>
+                    </div>
+                    <div>
+
+                        <div><span> BRAND</span> <i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Trendyol</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Roadster</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">H&M</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Tokyo Talkies</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">DressBerry</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">JC Collection</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">MANGO</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Vero Moda</label> </br>
+
+
+                    </div>
+                    <div>
+                        <div><span> PRICE</span> <i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Rs. 89 to Rs. 19317</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Rs. 19317 to Rs. 38545</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Rs. 38545 to Rs. 57773</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Rs. 57773 to Rs. 77001</label> </br>
+
+
+                    </div>
+                    <div>
+                        <div><span> COLOR</span> <i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input type="checkbox" />
+                        <span style="background-color: green;"></span>
+                        <label> Green</label><br />
+                        <input type="checkbox" />
+                        <span style="background-color:black;"></span>
+                        <label>Black</label><br />
+                        <input type="checkbox" />
+                        <span style="background-color:blue;"></span>
+                        <label>Blue</label><br />
+                        <input type="checkbox" />
+                        <span style="background-color:red;"></span>
+
+                        <label>Red</label><br />
+                        <input type="checkbox" />
+                        <span style="background-color:yellow;"></span>
+                        <label>Yellow</label><br />
+
+                        <input type="checkbox" />
+                        <span style="background-color: pink;"></span>
+                        <label>Pink</label><br />
+
+                        <input type="checkbox" />
+                        <span style="background-color: grey;"></span>
+                        <label>Grey</label><br />
+
+                        <input type="checkbox" />
+                        <span style="background-color: lavender;"></span>
+                        <label>Lavender</label><br />
+
+
+
+                    </div>
+
+                    <div>
+                        <div><span> DISCOUNT RANGE</span> <i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">10% and above</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">20% and above</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">30% and above</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">40% and above</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">10% and above</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">20% and above</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">30% and above</label> </br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">40% and above</label> </br>
+
+
+                    </div>
+
+
+
+
+                </div>
+                <div id="right">
+                    <div>
+
+                        <div><span>Bundles
+                                <select style="border: none; color: gray;">
+                                    <option style="border: none;"></option>
+                                </select>
+
+
+                            </span>
+
+                            <span>Country Of Origin
+                                <select style="border: none; color: gray;">
+                                    <option style="border: none;"></option>
+                                </select>
+                            </span><span>Size
+                                <select style="border: none; color: gray;">
+                                    <option style="border: none;"></option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <div>
+                            <div>
+                                Sort by:<b>Recommended</b>
+                                <select style="border: none; width: 50px; color: gray;">
+                                    <option style="border: none;"></option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <div>
+                            <img
+                                src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19050226/2022/10/28/3e208376-b98d-4eaa-8d00-68c9badadffa1666951667421-Anouk-Women-Dresses-7821666951666882-1.jpg">
+                            <p>Anouk</p>
+                            <p>Women Printed Midi Dress
+                            </p>
+                            <span>Rs.553</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12222102/2023/4/11/b32844b9-cc78-4217-bdfa-253598acac701681204750883-SASSAFRAS-Women-Black-Regular-Fit-Solid-Wide-Leg-Track-Pants-11.jpg">
+                            <p>SASSAFRAS</p>
+                             <p>Women Regular Wide Track Pants</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2262593/2022/11/22/c25c0c21-40ca-4fe8-b12b-6e0e628877101669105351998-HRX-Active-by-Hrithik-Roshan-Women-Black-Slim-Rapid-Dry-Tigh-1.jpg">
+                            <p>HRX by Hrithik Roshan
+                               
+                                
+                                </p>
+                             <p> Slim Rapid Dry Tights</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/21881944/2023/2/7/bacb67b9-c690-4ae5-9172-b3db6bae8aac1675772974887Widetwilltrousers1.jpg">
+                            <p>H&M
+                              
+                               </p>
+                             <p>  Women Wide Twill Trousers</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15577328/2021/10/19/3f477c11-9550-4db8-b360-7621b5fddd9b1634625769534-Antheaa-Women-Dresses-7701634625767867-1.jpg">
+                            <p>Antheaa </p>
+                             <p>  Smocked Tiered Midi Dress</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12222036/2020/10/6/d7ae3065-98d4-42d0-b244-d2b18802ff101601959656577-SASSAFRAS-Women-Black-Solid-High-Neck-Cropped-Top-4441601959-1.jpg">
+                            <p>SASSAFRAS</p>
+                             <p>High Neck Cropped Top</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17669442/2022/4/8/68782273-debf-4ac3-85b4-1ab9cdd9e7411649397188119-HERENOW-Women-Tops-2331649397187657-1.jpg">
+                            <p>SASSAFRAS</p>
+                             <p>High Neck Cropped Top</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15598130/2021/10/11/00b95453-af40-4cfe-a8fb-51960607777e1633926686080-DILLINGER-Women-Tshirts-7421633926685543-1.jpg">
+                            <p>SASSAFRAS</p>
+                             <p>High Neck Cropped Top</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                                src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19050226/2022/10/28/3e208376-b98d-4eaa-8d00-68c9badadffa1666951667421-Anouk-Women-Dresses-7821666951666882-1.jpg">
+                            <p>Anouk</p>
+                            <p>Women Printed Midi Dress
+                            </p>
+                            <span>Rs.553</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12222102/2023/4/11/b32844b9-cc78-4217-bdfa-253598acac701681204750883-SASSAFRAS-Women-Black-Regular-Fit-Solid-Wide-Leg-Track-Pants-11.jpg">
+                            <p>SASSAFRAS</p>
+                             <p>Women Regular Wide Track Pants</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2262593/2022/11/22/c25c0c21-40ca-4fe8-b12b-6e0e628877101669105351998-HRX-Active-by-Hrithik-Roshan-Women-Black-Slim-Rapid-Dry-Tigh-1.jpg">
+                            <p>HRX by Hrithik Roshan
+                               
+                                
+                                </p>
+                             <p> Slim Rapid Dry Tights</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+                        <div>
+                            <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/21881944/2023/2/7/bacb67b9-c690-4ae5-9172-b3db6bae8aac1675772974887Widetwilltrousers1.jpg">
+                            <p>H&M
+                              
+                               </p>
+                             <p>  Women Wide Twill Trousers</p>
+                            <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
