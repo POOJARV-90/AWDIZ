@@ -27,16 +27,7 @@ function register(event) {
 
      }
 
-     localStorage.setItem("userlist", JSON.stringify(userdata))
-
-
-
-
-
-
-
-
-
+localStorage.setItem("userlist", JSON.stringify(userdata))
 
     document.getElementById("userName").value = ""; 
     document.getElementById("userNumber").value = "";
@@ -46,4 +37,11 @@ function register(event) {
 
     alert("you have succesfully registered")
 }
+
+function getdata(){
+    var dataFromLS = JSON.parse(localStorage.getItem("userlist"));
+    console.log(dataFromLS)
+}
+
+// var dataFromLS = JSON.parse(localStorage.getItem(""))
 
