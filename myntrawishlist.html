@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wishlist</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        #screen{
+            width: 100%;
+            /* height: 500px; */
+            /* border: 1px solid red; */
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        #screen>div:nth-child(2){
+             width: 100%;
+           
+            /* border: 1px solid red; */
+            margin-top: 100px;
+
+        }
+
+        #navbar{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    position: fixed;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    top: 0%;
+}
+#logo{
+    width: 5%;
+    height: 70px;
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    margin-left: 50px;
+   
+}
+#sections{
+    width: 35%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: small;
+    padding-top: 23px;
+    color: #282c3f;
+    margin-right: 15px;
+}
+#search{
+    width: 30%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+ #search>div{
+     /* border: 1px solid red; */
+   background-color: #f5f5f6;
+
+ }
+
+#search>div:nth-child(1){
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 10%;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-left: 8px;
+    color: #717288;
+    /* background-color: #e4e4e4; */
+   
+
+}
+#search>div:nth-child(2){
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 85%;
+    margin-top: 15px;
+    /* background-color: #e4e4e4; */
+
+}
+#search>div:nth-child(2)>input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #f5f5f6;
+}
+
+
+
+
+#icons{
+    width: 15%;
+    height: 70px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#icons>div{
+    margin-top: 20px;
+
+}
+ #icons>div>i:nth-child(1){
+    /* border: 1px solid red; */
+     color: #282c3f;
+
+ }
+#icons>div>p{
+      color: #282c3f;
+    font-size: small;
+    margin-left: -4px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.anostyle{
+      text-decoration: none!important;
+      color: #282c3f
+}
+
+
+#screen>div:nth-child(2)>p{
+            margin-left: 65px;
+            font-weight: 640;
+            font-size: large;
+            
+
+        }
+
+        #wishlistproduct{
+            width: 90%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto;
+
+        }
+        #wishlistproduct>div{
+            width: 17%;
+            height: 400px;
+            border:  1px solid #e4e4e7;
+            line-height: 25px;
+            margin-top: 30PX;
+            /* margin-left: 30px; */
+           
+        }
+        #wishlistproduct>div>img:nth-child(1){
+            width: 100%;
+            height: 72%;
+        }
+
+        #wishlistproduct>div>p:nth-child(2){
+            color: #282C3F;
+            font-size: small;
+
+
+        }
+
+        #wishlistproduct>div>span:nth-child(3){
+            color: #282C3F;
+            font-weight: bold;
+        }
+
+        #wishlistproduct>div>span:nth-child(4){
+            color: #282C3F;
+            font-size: small;
+            color: grey;
+        }
+
+        #wishlistproduct>div>span:nth-child(5){
+            color: #282C3F;
+            font-weight: bold;
+            
+            color:orange;
+            margin-bottom: 10px;
+        }
+
+        #wishlistproduct>div>div:nth-child(6){
+            /* border: 1px solid grey; */
+            text-align: center;
+            padding: 10px;
+            margin-top: 8px;
+            font-weight: bold;
+            color: #F13AB1;
+            font-size: small;
+            border-top: 1px solid #e4e4e7;
+
+        }
+
+        /* #wishlistproduct>div>div:nth-child(6)>p{
+            fo
+        } */
+
+      
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="logo">
+                <img src="https://gumlet.assettype.com/afaqs%2F2021-01%2F51966c7c-de5b-4092-ac03-e1f5e6152b32%2Fmyntra.png?auto=format%2Ccompress&w=640&dpr=1.0" 
+                height="85%" width="80%">
+            </div>
+            <div id="sections">
+                <div> <a href="myntramens.html" class="anostyle" > MEN</a> </div>
+                <div ><a href="/myntrawomens.html" class="anostyle" > WOMEN</a> </div>
+                <div><a href="/myntrakids.html" class="anostyle" > KIDS</a></div>
+                <div><a href="/myntrahomes&living.html" class="anostyle" > HOME LIVING</a></div>
+                <div><a href="/myntrabeauty.html" class="anostyle" > BEAUTY</a></div>
+                <div>STUDIO</div>
+                
+
+
+            </div>
+            <div id="search">
+                <div><i class="fa-solid fa-magnifying-glass"></i> </div>
+                <div>  
+                    <input type="text" placeholder="search for products,brands and more">
+                </div>
+
+
+
+            </div>
+            <div id="icons">
+                <div><i class="fa-regular fa-user"></i>
+                <p>Profile</p>
+            </div>
+            <div><i class="fa-regular fa-heart"></i>
+                    <p>Wishlist</p></div>
+            <div><i class="fa-solid fa-bag-shopping"></i>
+                    <p>Bag</p></div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div>
+            <p>My Wishlist </p>
+
+            <div id="wishlistproduct">
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/11569354/2021/10/25/96e2815f-51eb-48ac-aa20-f64943f861851635163117668-Yufta-Women-Mauve-Ethnic-Motifs-Printed-Regular-Kurta-with-P-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/15098392/2021/8/24/34df092c-5af7-4670-8727-bf6fddd8586c1629800349690-KASSUALLY-Women-Dresses-3121629800349085-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/17206804/2022/2/28/90a62704-07c8-4aa0-a413-8e157b9f1fa31646045263924-UF-Women-Dresses-3851646045263269-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/16449870/2022/1/19/8aca4798-e568-4378-ad32-8d1dd3af435a1642588921939-Berrylush-Women-Attractive-Red-Floral-Puff-Sleeves-Dress-826-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/11569354/2021/10/25/96e2815f-51eb-48ac-aa20-f64943f861851635163117668-Yufta-Women-Mauve-Ethnic-Motifs-Printed-Regular-Kurta-with-P-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+
+                </div>
+
+                <div>
+                    <img
+                    src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15577328/2021/10/19/3f477c11-9550-4db8-b360-7621b5fddd9b1634625769534-Antheaa-Women-Dresses-7701634625767867-1.jpg">
+                   
+                     <p>  Smocked Tiered Midi Dress</p>
+                    <span>Rs.499</span> <span><s>Rs.1849</s></span><span>(68% OFF)</span>
+                    <div><p>MOVE TO BAG</p></div>
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/11569354/2021/10/25/96e2815f-51eb-48ac-aa20-f64943f861851635163117668-Yufta-Women-Mauve-Ethnic-Motifs-Printed-Regular-Kurta-with-P-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/15098392/2021/8/24/34df092c-5af7-4670-8727-bf6fddd8586c1629800349690-KASSUALLY-Women-Dresses-3121629800349085-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/17206804/2022/2/28/90a62704-07c8-4aa0-a413-8e157b9f1fa31646045263924-UF-Women-Dresses-3851646045263269-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/16449870/2022/1/19/8aca4798-e568-4378-ad32-8d1dd3af435a1642588921939-Berrylush-Women-Attractive-Red-Floral-Puff-Sleeves-Dress-826-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/11569354/2021/10/25/96e2815f-51eb-48ac-aa20-f64943f861851635163117668-Yufta-Women-Mauve-Ethnic-Motifs-Printed-Regular-Kurta-with-P-1.jpg" >
+                    <p>Yufta Women Mauve Ethnic Mot</p>
+                    <span>Rs.1,399</span>
+                    <span><s>Rs.2,399</s></span>
+                    <span>(65% OFF)</span>
+
+                    <div><p>MOVE TO BAG</p></div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

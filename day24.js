@@ -16,7 +16,27 @@ function register(event) {
     console.log(password, "-password")
 
     var address = document.getElementById("useraddress").value;
-     console.log(password, "-user address")
+     console.log(password, "-user address");
+
+     const userdata = {
+        username : name,
+        usernumber :  number,
+        useremail : email,
+        userpassword : password ,
+        userddress : address 
+
+     }
+
+     localStorage.setItem("userlist", JSON.stringify(userdata))
+
+
+
+
+
+
+
+
+
 
     document.getElementById("userName").value = ""; 
     document.getElementById("userNumber").value = "";
@@ -24,5 +44,6 @@ function register(event) {
     document.getElementById("userPassword").value = "";
     document.getElementById("useraddress").value = "";
 
-    alert("Resgitered..")
+    alert("you have succesfully registered")
 }
+
