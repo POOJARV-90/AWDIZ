@@ -47,49 +47,43 @@
 
 
 var start = 8723;
-var end = 6567;
+var end = 8500;
 
-function twoStage(start,end) {
+function twoStage(start, end) {
 
-    var filteredArray =[]
+    var filteredArray = []
 
-    var result =[]
+    var result = []
 
     for (var i = start; i >= end; i--) {
 
-        if ( i % 2 == 0 ) {
+        if (i % 2 == 0) {
 
-                        // filteredArray.push(i)
-                        // console.log(i)
-                        if ( i % 5 == 0 ) {
-                            
-                            if ( i % 10 == 0 ) {
-                            
-                            filteredArray.push(i)
-                        // console.log(i)
-                            result.pop(filteredArray ,"result")
+            // filteredArray.push(i)
+            // console.log(i)
+            if (i % 5 == 0) {
 
-                            
-                            }
+                if (i % 10 == 0) {
+                    filteredArray.push(i)
+                    // console.log(i)
+                    result.pop(filteredArray, "result")
+                }
+            }
+        }
 
-                            
-                             }
+        for(var j=0 ; j <= filteredArray.length-1 ;j++){
+            if(filteredArray.indexOf(j)%2==0){
+                result.push(i)
+            }
+        }
+    }
 
+    console.log(filteredArray)
+    console.log(result)
 
+}
 
-                      }
-
-        
-      
-     }
-
-     console.log(filteredArray)
-     console.log(result)
-
-
- }
-
- twoStage(start,end)
+twoStage(start, end)
 
 
 
