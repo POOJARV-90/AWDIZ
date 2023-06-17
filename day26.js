@@ -12,7 +12,7 @@ function plantnauturing() {
         }, 5000);
 
         
-      
+     
     });
 }
 
@@ -25,24 +25,3 @@ async function plantgrowing() {
 }
 plantgrowing();
 
-// function afterwatering(){
-//     return new Promise ((resolve)) => {
-//         setTimeout(()=>{
-//             resolve('growing');
-//         },2000;
-
-//         )
-//     }
-// }
-
-
-
-
-// function plantgrowing(){
-//     console.log('seed soaing');
-//     const result = await afterwatering();
-//     console.log(result);
-
-// }
-
-// plantgrowing()
