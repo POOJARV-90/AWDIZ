@@ -10,6 +10,9 @@ function plantnauturing() {
         setTimeout(() => {
             resolve('growing period');
         }, 5000);
+
+        
+      
     });
 }
 
