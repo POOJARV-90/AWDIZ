@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -153,7 +153,7 @@
             
             <!-- parent -->
 
-            <div id="leftright">
+            <!-- <div id="leftright">
 
                 <div id="left">
                     <div>
@@ -293,4 +293,48 @@
 
    
 </body>
+</html> --> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/abc.js"></script>
+    
+   
+
+    <style>
+        body>div{
+            display: flex;
+        }
+        body>div>a>div{
+            width: 20%;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <a href="#content1">
+            Show content 1
+            <div></div>
+        </a>
+        <a href="#content2">Show content 2
+            <div></div>
+        </a>
+        <a href="#content3">
+            Show content 3
+            <div></div>
+           </a>
+    </div>
+    
+    <div id="content1" class="toggle" style="display:none">show the stuff1</div> 
+    <div id="content2" class="toggle" style="display:none">show the stuff2</div>
+    <div id="content3" class="toggle" style="display:none">show the stuff3</div>
+</body>
 </html>
+
