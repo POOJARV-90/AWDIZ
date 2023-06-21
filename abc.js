@@ -60,10 +60,36 @@
 // let res = resultFunction(nums1,nums2);
 // console.log(res);
 
- var nums = [3, 2, 2, 3, 5];
-
- function removeDuplicates(nums) {
-    return Set(nums);
-}
+// var nums = [3, 2, 1, 3, 5,6];
  
-console.log(removeDuplicates(nums));
+// function removeDuplicates(nums) {
+//     var uniqueNums = [];
+//     for (var i = 0; i < nums.length; i++) {
+//          console.log(nums.indexOf(nums[i]))
+//         //  console.log(nums.lastIndexOf(nums[i]));
+//       if (nums.indexOf(nums[i]) === i && nums.lastIndexOf(nums[i]) === i) {
+//         uniqueNums.push(nums[i]);
+        
+
+//       }
+//     }
+//     return uniqueNums;
+//   }
+  
+
+//   var result = removeDuplicates(nums);
+//   console.log(result); // Output: [5]
+
+  let arr = ["apple", "mango",
+          "apple", "orange", "mango", "mango"];
+ 
+function removeDuplicates(arr) {
+    let unique = [];
+    for (i = 0; i < arr.length; i++) {
+        if (lastIndexOf(arr[i]) === -1 ) {
+            unique.push(arr[i]);
+        }
+    }
+    return unique;
+}
+console.log(removeDuplicates(arr));
